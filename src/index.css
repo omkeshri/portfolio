@@ -1,0 +1,722 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-body {
+      /* @apply bg-gradient-to-r from-black via-gray-900 to-black; */
+
+    }
+
+
+    /* From Uiverse.io by JulanDeAlb */ 
+.hamburger {
+    cursor: pointer;
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 2em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+
+  /* From Uiverse.io by andrew-demchenk0 */ 
+.resume-button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.resume-button, .resume-button__icon, .resume-button__text {
+  transition: all 0.3s;
+}
+
+.resume-button .resume-button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.resume-button .resume-button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.resume-button:hover {
+  background: #17795E;
+}
+
+.resume-button:hover .resume-button__text {
+  color: transparent;
+}
+
+.resume-button:hover .resume-button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.resume-button:active .resume-button__icon {
+  background-color: #146c54;
+}
+
+.resume-button:active {
+  border: 1px solid #146c54;
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.about-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.about-button {
+  --primary-color: #fff;
+  --hovered-color: #fff;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.about-button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.about-button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+
+.about-button:hover::after {
+  width: 100%;
+}
+
+.about-button:hover p::before {
+  width: 100%;
+}
+
+.about-button:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color);
+}
+
+.about-button svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
+
+/* From Uiverse.io by alexruix */ 
+.card {
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+ 
+ .card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .card-button {
+  transform: translate(-50%, 125%);
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .text-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+ 
+ /*Hover*/
+ .card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
+  
+
+.arrow {
+  cursor: pointer;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 0.1s;
+  width: 50px;
+}
+
+.arrow-top, .arrow-bottom {
+  background-color: #666;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.arrow-top:after, .arrow-bottom:after {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
+.arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+
+.arrow:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+.arrow:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+
+.arrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: .9em;
+  margin-left: 1.7em;
+  width: 48px;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: .7em;
+  margin-left: .9em;
+  width: 48px;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.5em;
+  margin-left: 1.7em;
+  width: 48px;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.6em;
+  margin-left: .9em;
+  fill: #8c9eff;
+  width: 48px;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+  text-decoration: none;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+
+#btn {
+  padding: 3px 15px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff58;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #3B82F6;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.about-button {
+  cursor: pointer;
+  position: relative;
+  padding: 8px 24px;
+  font-size: 15px;
+  color: rgb(55, 181, 212);
+  border: 2px solid rgb(55, 181, 212);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.about-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(55, 181, 212);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.about-button:hover::before {
+  scale: 3;
+}
+
+.about-button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgb(55, 181, 212);
+}
+
+.about-button:active {
+  scale: 1;
+}
+
+/* From Uiverse.io by AmIt-DasIT */ 
+.box {
+  width: 40px;
+  height: 40px;
+  background: rgb(55, 181, 212);
+  border-radius: 25px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow {
+  width: 9.1px;
+  border: solid black;
+  border-width:  3px 0 0 3px ;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+}
+.arrow2 {
+  width: 9.1px;
+  border: solid black;
+  border-width: 0 3px 3px 0 ;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.box:hover {
+  /* width: 170px; */
+  box-shadow: 0 0px 20px rgb(55, 181, 212);
+}
+
+@media (min-width: 1025px) { 
+  .box:hover .arrow {
+    display: none;
+  }
+  .box:hover .arrow2 {
+    display: none;
+  }
+}
+
+.box .text {
+  display: none;
+}
+
+@media (min-width: 1025px){
+.box:hover .text {
+  display: flex;
+  font-size: 16px;
+  font-weight: 550;
+  color: #212121;
+  letter-spacing: 0.6px;
+  animation: anima 0.9s ease;
+}}
+
+@keyframes anima {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s both 0.6s;
+}
+
+.fadeInUpLarge {
+  animation: fadeInUp 1s both 1s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  animation: fadeInDown 1s both 1.5s;
+}
+
+.fadeInDownHeader {
+  animation: fadeInDown 1s both 0.1s;
+  transition: all 0.4s ease;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 5s forwards;
+}
+
+@keyframes popOut {
+  0% {
+    transform: scale(0.5) translateZ(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.popOut {
+  animation: popOut 1s ease-out;
+  transform-origin: center;
+}
+.popOutServices {
+  animation: popOut 1.5s ease-out;
+  transform-origin: center;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInRight {
+  animation: slideInFromRight 1s ease-out;
+}
+.slideInRightNews {
+  animation: slideInFromRight 2s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.typing-effect {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+
+}
