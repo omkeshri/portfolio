@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="h-screen flex flex-col gap-4 items-center justify-center text-slate-500">
       <motion.h3
-        className="text-2xl sm:text-4xl text-slate-50 font-bold"
+        className="text-xl sm:text-4xl text-slate-50 font-bold"
         variants={popOutVariants}
         initial="hidden"
         whileInView="visible"
@@ -21,7 +21,7 @@ const About = () => {
         <span className="text-green-500">"Hi, I am Om Keshri"</span>
         <span className="text-slate-50">)</span>
       </motion.h3>
-      <p className="w-[80%] text-base sm:text-lg text-slate-500">
+      <p className="w-[80%] text-sm sm:text-lg text-slate-500">
         I am a web developer/engineer with interest in front-end and back-end
         technologies. I have experience developing websites, Web applications,
         and Web services using{" "}
@@ -36,7 +36,7 @@ const About = () => {
         discovering new things. "Learning is a life-long journey"
       </p>
 
-      <div className="flex gap-5 sm:gap-10">
+      <div className="flex gap-5 sm:gap-10 ">
         <a href={resume} download="Om Keshri Resume" target="_blank">
         <motion.button
         variants={buttonVariants}

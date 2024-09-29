@@ -5,7 +5,7 @@ import NameSpan from "./NameSpan";
 
 const InfoContainer = () => {
   return (
-    <div className=" space-y-1 lg:text-start text-center">
+    <div className=" space-y-1 lg:text-start text-center w-full md:w-[400px]">
       <h1 className="text-6xl font-bold text-slate-50 tracking-wider ">
         <NameSpan char={"O"} delay={0.3} />
         <NameSpan char={"m"} delay={0.4} />

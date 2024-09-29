@@ -110,65 +110,6 @@
   border: 1px solid #146c54;
 }
 
-/* From Uiverse.io by satyamchaudharydev */ 
-.about-button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.about-button {
-  --primary-color: #fff;
-  --hovered-color: #fff;
-  position: relative;
-  display: flex;
-  font-weight: 600;
-  font-size: 20px;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.about-button p {
-  margin: 0;
-  position: relative;
-  font-size: 20px;
-  color: var(--primary-color);
-}
-
-.about-button::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -7px;
-  background: var(--hovered-color);
-  height: 2px;
-  transition: 0.3s ease-out;
-}
-
-
-.about-button:hover::after {
-  width: 100%;
-}
-
-.about-button:hover p::before {
-  width: 100%;
-}
-
-.about-button:hover svg {
-  transform: translateX(4px);
-  color: var(--hovered-color);
-}
-
-.about-button svg {
-  color: var(--primary-color);
-  transition: 0.2s;
-  position: relative;
-  width: 15px;
-  transition-delay: 0.2s;
-}
 
 
 /* From Uiverse.io by alexruix */ 
@@ -450,11 +391,22 @@
     0 0 100px #008cff;
 }
 
-/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by gharsh11032000 */
+@media (min-width: 400px) { 
+  .about-button{
+    padding: 8px 24px;
+  }
+}
+@media (max-width: 399px){
+  .about-button{
+    padding: 4px 12px;
+  }
+}
+
 .about-button {
   cursor: pointer;
   position: relative;
-  padding: 8px 24px;
+  /* padding: 8px 24px; */
   font-size: 15px;
   color: rgb(55, 181, 212);
   border: 2px solid rgb(55, 181, 212);
