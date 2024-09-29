@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { popOutVariants } from '../Utils/motionVariants'
+import { popOutVariants } from '../../Utils/motionVariants'
 
 const Footer = () => {
   return (

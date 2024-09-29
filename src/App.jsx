@@ -1,6 +1,6 @@
 import './scrollbar.css';
 import Header from "./Components/Header/Header";
-import Footer from "./Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 
 function App() {
