@@ -24,7 +24,6 @@ export const projects = [
   {
     id: 2,
     title: "Foodify",
-    title2: "",
     subtitle: "Food at your Doorstep",
     languages: "React, JavaScript,",
     languages2: "Tailwind",
@@ -34,7 +33,6 @@ export const projects = [
   {
     id: 4,
     title: "Netflix/GPT",
-    title2: "",
     subtitle: "Netflix with GPT Search",
     languages: "React, JavaScript,",
     languages2: "Tailwind",
@@ -44,7 +42,6 @@ export const projects = [
   {
     id: 4,
     title: "Social Media Dashboard",
-    title2: "",
     subtitle: "Dark/Light Toggle",
     languages: "HTML, SCSS,",
     languages2: "JavaScript",

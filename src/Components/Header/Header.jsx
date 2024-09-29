@@ -34,22 +34,22 @@ const Header = () => {
       </Link>
 
       <div className="flex gap-[0.38rem] sm:gap-3">
-        <Link to={"https://github.com/omkeshri"}>
+        <Link to={"https://github.com/omkeshri"} target="_blank">
           <HeaderLink Icon={FaGithub} />
         </Link>
-        <Link to={"https://www.linkedin.com/in/omkeshari"}>
+        <Link to={"https://www.linkedin.com/in/omkeshari"} target="_blank">
           <HeaderLink Icon={FaLinkedin} />
         </Link>
-        <Link to={"https://leetcode.com/u/omkeshari"}>
+        <Link to={"https://leetcode.com/u/omkeshari"} target="_blank">
           <HeaderLink Icon={SiLeetcode} />
         </Link>
-        <Link to={"https://www.codechef.com/users/omkeshari"}>
+        <Link to={"https://www.codechef.com/users/omkeshari"} target="_blank">
           <HeaderLink Icon={SiCodechef} />
         </Link>
-        <Link to={"https://www.instagram.com/omkeshri_"}>
+        <Link to={"https://www.instagram.com/omkeshri_"} target="_blank">
           <HeaderLink Icon={FaInstagram} />
         </Link>
-        <Link to={"https://t.me/om_keshari"}>
+        <Link to={"https://t.me/om_keshari"} target="_blank">
           <HeaderLink Icon={FaTelegramPlane} />
         </Link>
       </div>

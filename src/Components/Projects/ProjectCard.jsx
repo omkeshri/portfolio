@@ -7,7 +7,6 @@ const ProjectCard = ({setShowInfo, title, title2, subtitle, languages, languages
     onClick={() => setShowInfo()}>
         <img className="w-[95%] h-[160px] rounded-xl " src={imgSrc}></img>
         <h1 className="text-xl font-medium tracking-wide pt-2 text-[#00fbff]">
-          {/* Social Media Dashboard */}
           {title}
         </h1>
         <h2 className="text-md font-medium">{subtitle}</h2>

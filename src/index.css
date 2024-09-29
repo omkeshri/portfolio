@@ -3,28 +3,25 @@
 @tailwind utilities;
 
 @layer components {
-    .bg-body {
-      /* @apply bg-gradient-to-r from-black via-gray-900 to-black; */
+  .bg-body {
+    @apply bg-[#0F172A];
+  }
 
-    }
-
-
-    /* From Uiverse.io by JulanDeAlb */ 
-.hamburger {
+  .hamburger {
     cursor: pointer;
   }
-  
+
   .hamburger input {
     display: none;
   }
-  
+
   .hamburger svg {
     /* The size of the SVG defines the overall size */
     height: 2em;
     /* Define the transition for transforming the SVG */
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .line {
     fill: none;
     stroke: white;
@@ -33,338 +30,348 @@
     stroke-width: 3;
     /* Define the transition for transforming the Stroke */
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .line-top-bottom {
     stroke-dasharray: 12 63;
   }
-  
+
   .hamburger input:checked + svg {
     transform: rotate(-45deg);
   }
-  
+
   .hamburger input:checked + svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
 
-  /* From Uiverse.io by andrew-demchenk0 */ 
-.resume-button {
-  position: relative;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: 1px solid #17795E;
-  background-color: #209978;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.resume-button, .resume-button__icon, .resume-button__text {
-  transition: all 0.3s;
-}
-
-.resume-button .resume-button__text {
-  transform: translateX(22px);
-  color: #fff;
-  font-weight: 600;
-}
-
-.resume-button .resume-button__icon {
-  position: absolute;
-  transform: translateX(109px);
-  height: 100%;
-  width: 39px;
-  background-color: #17795E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.resume-button .svg {
-  width: 20px;
-  fill: #fff;
-}
-
-.resume-button:hover {
-  background: #17795E;
-}
-
-.resume-button:hover .resume-button__text {
-  color: transparent;
-}
-
-.resume-button:hover .resume-button__icon {
-  width: 148px;
-  transform: translateX(0);
-}
-
-.resume-button:active .resume-button__icon {
-  background-color: #146c54;
-}
-
-.resume-button:active {
-  border: 1px solid #146c54;
-}
-
-
-
-#btn {
-  padding: 3px 15px;
-  border-radius: 50px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #ffffff58;
-  text-shadow: none;
-  background: transparent;
-  cursor: pointer;
-  box-shadow: transparent;
-  border: 1px solid #3B82F6;
-  transition: 0.5s ease;
-  user-select: none;
-}
-
-#btn:hover {
-  color: #ffffff;
-  background: #008cff;
-  border: 1px solid #008cff;
-  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-    0 0 100px #008cff;
-}
-
-/* From Uiverse.io by gharsh11032000 */
-@media (min-width: 400px) { 
-  .about-button{
-    padding: 8px 24px;
+  /* From Uiverse.io by andrew-demchenk0 */
+  .resume-button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #17795e;
+    background-color: #209978;
+    overflow: hidden;
+    border-radius: 5px;
   }
-}
-@media (max-width: 399px){
-  .about-button{
-    padding: 4px 12px;
+
+  .resume-button,
+  .resume-button__icon,
+  .resume-button__text {
+    transition: all 0.3s;
   }
-}
 
-.about-button {
-  cursor: pointer;
-  position: relative;
-  /* padding: 8px 24px; */
-  font-size: 15px;
-  color: rgb(55, 181, 212);
-  border: 2px solid rgb(55, 181, 212);
-  border-radius: 34px;
-  background-color: transparent;
-  font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-  overflow: hidden;
-}
+  .resume-button .resume-button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
 
-.about-button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 50px;
-  height: 50px;
-  border-radius: inherit;
-  scale: 0;
-  z-index: -1;
-  background-color: rgb(55, 181, 212);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
+  .resume-button .resume-button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #17795e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.about-button:hover::before {
-  scale: 3;
-}
+  .resume-button .svg {
+    width: 20px;
+    fill: #fff;
+  }
 
-.about-button:hover {
-  color: #212121;
-  scale: 1.1;
-  box-shadow: 0 0px 20px rgb(55, 181, 212);
-}
+  .resume-button:hover {
+    background: #17795e;
+  }
 
-.about-button:active {
-  scale: 1;
-}
+  .resume-button:hover .resume-button__text {
+    color: transparent;
+  }
 
-/* From Uiverse.io by AmIt-DasIT */ 
-.box {
-  width: 40px;
-  height: 40px;
-  background: rgb(55, 181, 212);
-  border-radius: 25px;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-  cursor: pointer;
-  position: relative;
-}
+  .resume-button:hover .resume-button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
 
-.arrow {
-  width: 9.1px;
-  border: solid black;
-  border-width:  3px 0 0 3px ;
-  display: inline-block;
-  padding: 3px;
-  margin-left: 4px;
-}
-.arrow2 {
-  width: 9.1px;
-  border: solid black;
-  border-width: 0 3px 3px 0 ;
-  display: inline-block;
-  padding: 3px;
-}
+  .resume-button:active .resume-button__icon {
+    background-color: #146c54;
+  }
 
-.right {
-  transform: rotate(-45deg);
-}
+  .resume-button:active {
+    border: 1px solid #146c54;
+  }
 
-.box:hover {
-  /* width: 170px; */
-  box-shadow: 0 0px 20px rgb(55, 181, 212);
-}
+  #btn {
+    padding: 3px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff58;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #3b82f6;
+    transition: 0.5s ease;
+    user-select: none;
+  }
 
-@media (min-width: 600px) { 
-  .box:hover .arrow {
+  #btn:hover {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+      0 0 100px #008cff;
+  }
+
+  /* From Uiverse.io by gharsh11032000 */
+  @media (min-width: 400px) {
+    .about-button {
+      padding: 8px 24px;
+    }
+  }
+  @media (max-width: 399px) {
+    .about-button {
+      padding: 4px 12px;
+    }
+  }
+
+  .about-button {
+    cursor: pointer;
+    position: relative;
+    /* padding: 8px 24px; */
+    font-size: 15px;
+    color: rgb(55, 181, 212);
+    border: 2px solid rgb(55, 181, 212);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+  }
+
+  .about-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(55, 181, 212);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .about-button:hover::before {
+    scale: 3;
+  }
+
+  .about-button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgb(55, 181, 212);
+  }
+
+  .about-button:active {
+    scale: 1;
+  }
+
+  /* From Uiverse.io by AmIt-DasIT */
+  .box {
+    width: 40px;
+    height: 40px;
+    background: rgb(55, 181, 212);
+    border-radius: 25px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .arrow {
+    width: 9.1px;
+    border: solid black;
+    border-width: 3px 0 0 3px;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 4px;
+  }
+  .arrow2 {
+    width: 9.1px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+  }
+
+  .box:hover {
+    /* width: 170px; */
+    box-shadow: 0 0px 20px rgb(55, 181, 212);
+  }
+
+  @media (min-width: 600px) {
+    .box:hover .arrow {
+      display: none;
+    }
+    .box:hover .arrow2 {
+      display: none;
+    }
+  }
+
+  .box .text {
     display: none;
   }
-  .box:hover .arrow2 {
-    display: none;
-  }
-}
 
-.box .text {
-  display: none;
-}
-
-@media (min-width: 600px){
-.box:hover .text {
-  display: flex;
-  font-size: 16px;
-  font-weight: 550;
-  color: #212121;
-  letter-spacing: 0.6px;
-  animation: anima 0.9s ease;
-}}
-
-@keyframes anima {
-  0% {
-    opacity: 0;
+  @media (min-width: 600px) {
+    .box:hover .text {
+      display: flex;
+      font-size: 16px;
+      font-weight: 550;
+      color: #212121;
+      letter-spacing: 0.6px;
+      animation: anima 0.9s ease;
+    }
   }
 
-  100% {
-    opacity: 1;
-  }
-}
+  @keyframes anima {
+    0% {
+      opacity: 0;
+    }
 
-.card {
-  width: 270px;
-  height: 355px;
-  background: #07182E;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-  padding:6px 0;
-}
-
-.card h2, .card img, .card h1, .card p, .card button, .card a{
-  z-index: 1;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-  height: 130%;
-  animation: rotBGimg 3s linear infinite;
-  transition: all 0.2s linear;
-}
-
-@keyframes rotBGimg {
-  from {
-    transform: rotate(0deg);
+    100% {
+      opacity: 1;
+    }
   }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.card::after {
-  content: '';
-  position: absolute;
-  background: #09357c;
-  ;
-  inset: 5px;
-  border-radius: 15px;
-}  
-.card:hover:before {
-  background-image: linear-gradient(180deg, rgb(81, 255, 0), rgb(255, 19, 255));
-  animation: rotBGimg 3.5s linear infinite;
-}
-.project-button {
-  font-family: inherit;
-  font-size: 20px;
-  background: rgb(218, 217, 217);
-  color: black;
-  padding: 0.3em 1em;
-  padding-left: 0.9em;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.project-button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
-}
-
-.project-button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
-}
-
-.project-button:hover svg {
-  transform: translateX(2.7em) rotate(45deg) scale(1.1);
-}
-
-.project-button:hover span {
-  transform: translateX(8em);
-}
-
-.project-button:active {
-  transform: scale(0.95);
-}
-
-@keyframes fly-1 {
-  from {
-    transform: translateY(0.1em);
+  .card {
+    width: 270px;
+    height: 355px;
+    background: #07182e;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 6px 0;
   }
 
-  to {
-    transform: translateY(-0.1em);
+  .card h2,
+  .card img,
+  .card h1,
+  .card p,
+  .card button,
+  .card a {
+    z-index: 1;
   }
-}
 
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(
+      180deg,
+      rgb(0, 183, 255),
+      rgb(255, 48, 255)
+    );
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
 
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
 
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    background: #09357c;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .card:hover:before {
+    background-image: linear-gradient(
+      180deg,
+      rgb(81, 255, 0),
+      rgb(255, 19, 255)
+    );
+    animation: rotBGimg 3.5s linear infinite;
+  }
+  .project-button {
+    font-family: inherit;
+    font-size: 20px;
+    background: rgb(218, 217, 217);
+    color: black;
+    padding: 0.3em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .project-button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .project-button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .project-button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+
+  .project-button:hover svg {
+    transform: translateX(2.7em) rotate(45deg) scale(1.1);
+  }
+
+  .project-button:hover span {
+    transform: translateX(8em);
+  }
+
+  .project-button:active {
+    transform: scale(0.95);
+  }
+
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
 }
