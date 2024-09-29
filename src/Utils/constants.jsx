@@ -54,10 +54,10 @@ export const projects = [
   {
     id: 5,
     title: "Customer Manager",
-    subtitle: "Manage your Customer",
+    subtitle: "Manage Billing",
     languages: "C/C++",
     languages2: "",
-    imgSrc: ""
+    imgSrc: "src/Images/CustomerManagement.png"
   },
     
   
@@ -86,7 +86,7 @@ export const projects = [
     subtitle: "Fun & Interactive Game",
     languages: "Python",
     languages2: "",
-    imgSrc: ""
+    imgSrc: "src/Images/QuizGame.png"
   },
     
 ]
