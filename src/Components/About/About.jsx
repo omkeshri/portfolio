@@ -14,7 +14,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
       >
-        <span className="text-blue-500">console</span>
+        <span className="text-blue-500"></span>
         <span className="text-slate-50">.</span>
         <span className="text-pink-600">log</span>
         <span className="text-slate-50">(</span>

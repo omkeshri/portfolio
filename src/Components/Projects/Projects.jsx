@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SocialDashboardInfo from "./SocialDashboardInfo";
+import FoodifyInfo from "./FoodifyInfo";
 import Container from "./Container";
 
 const Projects = () => {
@@ -9,13 +9,10 @@ const Projects = () => {
     <div className="min-h-screen">
       <Container showInfo={showInfo} setShowInfo={() => setShowInfo(1)} />
 
-      <SocialDashboardInfo
+      <FoodifyInfo
         showInfo={showInfo}
         setShowInfo={() => setShowInfo(0)}
       />
-
-
-
     </div>
   );
 };

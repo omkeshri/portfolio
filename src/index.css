@@ -46,68 +46,6 @@
     stroke-dashoffset: -32.42;
   }
 
-  /* From Uiverse.io by andrew-demchenk0 */
-  .resume-button {
-    position: relative;
-    width: 150px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border: 1px solid #17795e;
-    background-color: #209978;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-
-  .resume-button,
-  .resume-button__icon,
-  .resume-button__text {
-    transition: all 0.3s;
-  }
-
-  .resume-button .resume-button__text {
-    transform: translateX(22px);
-    color: #fff;
-    font-weight: 600;
-  }
-
-  .resume-button .resume-button__icon {
-    position: absolute;
-    transform: translateX(109px);
-    height: 100%;
-    width: 39px;
-    background-color: #17795e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .resume-button .svg {
-    width: 20px;
-    fill: #fff;
-  }
-
-  .resume-button:hover {
-    background: #17795e;
-  }
-
-  .resume-button:hover .resume-button__text {
-    color: transparent;
-  }
-
-  .resume-button:hover .resume-button__icon {
-    width: 148px;
-    transform: translateX(0);
-  }
-
-  .resume-button:active .resume-button__icon {
-    background-color: #146c54;
-  }
-
-  .resume-button:active {
-    border: 1px solid #146c54;
-  }
 
   #btn {
     padding: 3px 15px;
@@ -374,4 +312,114 @@
       transform: translateY(-0.1em);
     }
   }
+
+
+
+  /* From Uiverse.io by adamgiebl */ 
+.next-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.6em 2.5em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+.next-button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.next-button span {
+  gap: 4;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.next-button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.next-button:hover span {
+  transform: translateX(7px);
+}
+
+
+ 
+.project-arrow {
+  cursor: pointer;
+  height: 60px;
+  right: 1%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 0.1s;
+  box-sizing: border-box;
+  width: 40px;
+  padding: 2rem 2rem;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border-radius: 40px;
+
+}
+
+.project-arrow-top, .project-arrow-bottom {
+  background-color: #666;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.project-arrow-top:after, .project-arrow-bottom:after {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+
+.project-arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.project-arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
+.project-arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.project-arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+
+.project-arrow:hover .project-arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+.project-arrow:hover .project-arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+
+.project-arrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
 }

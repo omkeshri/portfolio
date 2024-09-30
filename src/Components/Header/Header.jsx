@@ -22,14 +22,14 @@ const Header = () => {
     >
       <Link to="/">
         <motion.div
-          class={`box sm:hover:w-[170px] ${
+          className={`box sm:hover:w-[170px] ${
             location.pathname === "/" ? "opacity-0" : ""
           }`}
           initial={{ x: "-10vw" }}
           animate={{ x: 0 }}
         >
-          <div class="arrow right"></div>
-          <div class="text hidden sm:block">Back to Home</div>
+          <div className="arrow right"></div>
+          <div className="text hidden sm:block">Back to Home</div>
         </motion.div>
       </Link>
 
@@ -57,14 +57,14 @@ const Header = () => {
         to={location.pathname === "/projects" ? "/certificates" : "/projects"}
       >
         <motion.div
-          class={`box sm:hover:w-[170px] ${
+          className={`box sm:hover:w-[170px] ${
             location.pathname === "/" ? "opacity-0" : ""
           }`}
           initial={{ x: "10vw" }}
           animate={{ x: 0 }}
         >
-          <div class="arrow2 right"></div>
-          <div class="text hidden sm:block">
+          <div className="arrow2 right"></div>
+          <div className="text hidden sm:block">
             {location.pathname === "/certificates"
               ? "Go to Projects"
               : "Go to Certificates"}
