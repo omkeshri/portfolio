@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { certificates } from "../../Utils/constants";
-import ShowCertificate from "./showCertificate";
 import { motion } from "framer-motion";
 import { certificateContainerVariants } from "../../Utils/motionVariants";
+import ShowCertificate from "./showCertificate";
 
 const Certificates = () => {
   const [showIndex, setshowIndex] = useState(null);
