@@ -56,7 +56,7 @@ const FoodifyInfo = ({ showInfo, setShowInfo }) => {
 
               {slide === 2 && (
                 <motion.div
-                  className="flex flex-col items-center"
+                  className="flex flex-col items-center p-4 overflow-scroll"
                   key="slide2"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
@@ -72,7 +72,7 @@ const FoodifyInfo = ({ showInfo, setShowInfo }) => {
               )}
               {slide === 3 && (
                 <motion.div
-                  className="flex flex-col items-center"
+                  className="flex flex-col items-center p-4 overflow-scroll"
                   key="slide3"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
@@ -89,7 +89,7 @@ const FoodifyInfo = ({ showInfo, setShowInfo }) => {
 
               {slide === 4 && (
                 <motion.div
-                  className="flex flex-col items-center"
+                  className="flex flex-col items-center p-4 overflow-scroll"
                   key="slide4"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
