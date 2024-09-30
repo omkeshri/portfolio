@@ -3,7 +3,7 @@ import gfg from "../../Images/gfg.png";
 import dsa from "../../Images/dsa.png";
 import dp from "../../Images/dp.png";
 import frontend from "../../Images/frontend.png";
-import backend from "../../Images/backend.png";
+import backend from "../../Images/Backend.png";
 import genai from "../../Images/genai.png";
 import llm from "../../Images/llm.png";
 import genaillm from "../../Images/genaillm.png";
