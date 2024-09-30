@@ -23,4 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-/src/Utils/firebase.jsx
+src/Utils/firebase.jsx
+.firebase/
+.firebaserc
+firebase.json
