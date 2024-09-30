@@ -11,6 +11,15 @@ export const certificates = [
   { title: "Generative AI with Large Language Models", name: "genaillm" },
 ];
 
+import medicoz from "../Images/Medicoz.png"
+import foodify from "../Images/Foodify.png"
+import youtube from "../Images/Youtube.png"
+import netflix from "../Images/Netflix.png"
+import socialDashboard from "../Images/SocialDashboard.png"
+import customerManagement from "../Images/CustomerManagement.png"
+import blackJack from "../Images/BlackJack.png"
+import leadTracker from "../Images/LeadTracker.png"
+import quizGame from "../Images/QuizGame.png"
 export const projects = [
   {
     id: 1,
@@ -18,7 +27,7 @@ export const projects = [
     subtitle: "Med with AI",
     languages: "React, NodeJs,",
     languages2: "ExpressJs, MongoDB, Tailwind",
-    imgSrc: "src/Images/Medicoz.png",
+    imgSrc: medicoz,
   },
 
   {
@@ -27,7 +36,7 @@ export const projects = [
     subtitle: "Food at your Doorstep",
     languages: "React, JavaScript,",
     languages2: "Tailwind",
-    imgSrc: "src/Images/Foodify.png",
+    imgSrc: foodify,
   },
 
   {
@@ -36,7 +45,7 @@ export const projects = [
     subtitle: "Just a clone",
     languages: "React, JavaScript,",
     languages2: "Tailwind",
-    imgSrc: "src/Images/Youtube.png",
+    imgSrc: youtube,
   },
 
   {
@@ -45,7 +54,7 @@ export const projects = [
     subtitle: "Netflix with GPT Search",
     languages: "React, JavaScript,",
     languages2: "Tailwind",
-    imgSrc: "src/Images/Netflix.png",
+    imgSrc: netflix,
   },
 
   {
@@ -54,7 +63,7 @@ export const projects = [
     subtitle: "Dark/Light Toggle",
     languages: "HTML, SCSS,",
     languages2: "JavaScript",
-    imgSrc: "src/Images/SocialDashboard.png",
+    imgSrc: socialDashboard,
   },
 
   {
@@ -63,7 +72,7 @@ export const projects = [
     subtitle: "Manage Billing",
     languages: "C/C++",
     languages2: "",
-    imgSrc: "src/Images/CustomerManagement.png",
+    imgSrc: customerManagement,
   },
 
   {
@@ -72,7 +81,7 @@ export const projects = [
     subtitle: "Fun & Interactive Game",
     languages: "HTML, CSS",
     languages2: "JavaScript",
-    imgSrc: "src/Images/BlackJack.png",
+    imgSrc: blackJack,
   },
 
   {
@@ -81,7 +90,7 @@ export const projects = [
     subtitle: "Chrome Extension",
     languages: "HTML, CSS,",
     languages2: "JavaScript",
-    imgSrc: "src/Images/LeadTracker.png",
+    imgSrc: leadTracker,
   },
 
   {
@@ -90,7 +99,7 @@ export const projects = [
     subtitle: "Fun & Interactive Game",
     languages: "Python",
     languages2: "",
-    imgSrc: "src/Images/QuizGame.png",
+    imgSrc: quizGame,
   },
 ];
 
