@@ -7,7 +7,7 @@ import customerManagementImage from "../Images/CustomerManagement.png"
 import blackJackImage from "../Images/BlackJack.png"
 import leadTrackerImage from "../Images/LeadTracker.png"
 import quizGameImage from "../Images/QuizGame.png"
-import blackJackVideo from "../Images/BlackJack.mp4"
+import blackJackVideo from "../Assets/BlackJack.mp4"
 import { FaReact as React } from "react-icons/fa";
 import { TbFileTypeJsx as Jsx } from "react-icons/tb";
 import { SiRedux as Redux } from "react-icons/si";

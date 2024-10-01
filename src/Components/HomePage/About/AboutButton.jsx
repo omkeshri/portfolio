@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { buttonVariants } from "../../Utils/motionVariants";
+import { buttonVariants } from "../../../Utils/motionVariants";
 
 const AboutButton = ({ name, delay }) => {
   return (

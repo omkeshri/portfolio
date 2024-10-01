@@ -1,6 +1,6 @@
 import React from "react";
 import InfoContainer from "./InfoContainer";
-import pic from "../../Images/WhoWeAre.jpg";
+import pic from "../../../Images/WhoWeAre.jpg";
 import { motion } from "framer-motion";
 import About from "../About/About";
 

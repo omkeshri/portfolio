@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { SiCodechef, SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
-import { headerContainerVariants } from "../../Utils/motionVariants";
+import { headerContainerVariants } from "../../../Utils/motionVariants";
 import HeaderLink from "./HeaderLink";
 import { Link, useLocation } from "react-router-dom";
 

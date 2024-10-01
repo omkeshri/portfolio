@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { nameSpanVariants } from "../../Utils/motionVariants";
+import { nameSpanVariants } from "../../../Utils/motionVariants";
 
 const NameSpan = ({ char, delay }) => {
   return (

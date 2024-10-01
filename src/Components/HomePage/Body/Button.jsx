@@ -1,6 +1,6 @@
 import React from "react";
 import { delay, motion } from "framer-motion";
-import { buttonVariants } from "../../Utils/motionVariants";
+import { buttonVariants } from "../../../Utils/motionVariants";
 
 const Button = ({name, delay}) => {
   return (

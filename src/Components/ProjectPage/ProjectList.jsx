@@ -4,9 +4,7 @@ import ProjectCard from "./ProjectCard";
 import { projects } from "../../Utils/constants";
 
 const ProjectList = ({ showInfo, setShowInfo }) => {
-    const handleShowInfo = () => {
-        setShowInfo();
-      };
+  
   return (
     <div>
         <AnimatePresence mode="wait">

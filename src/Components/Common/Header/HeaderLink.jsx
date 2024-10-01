@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { headerLinkVariants } from "../../Utils/motionVariants";
+import { headerLinkVariants } from "../../../Utils/motionVariants";
 
 const HeaderLink = ({ Icon }) => {
   return (

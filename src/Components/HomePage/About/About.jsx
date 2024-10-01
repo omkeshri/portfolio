@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { buttonVariants, popOutVariants } from "../../Utils/motionVariants";
-import resume from "../../Assets/MyResume.pdf";
+import { buttonVariants, popOutVariants } from "../../../Utils/motionVariants";
+import resume from "../../../Assets/MyResume.pdf";
 import AboutButton from "./AboutButton";
 import { Link } from "react-router-dom";
 

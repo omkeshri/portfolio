@@ -6,9 +6,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Body from "./Components/Body/Body.jsx";
-import Certificates from "./Components/Certificates/Certificates.jsx";
-import Project from "./Components/Project/Project.jsx";
+import Body from "./Components/HomePage/Body/Body.jsx";
+import Certificates from "./Components/CertificatePage/Certificates.jsx";
+import Project from "./Components/ProjectPage/Project.jsx";
 
 const appRouter = createBrowserRouter([
   {
