@@ -10,7 +10,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="card cursor-pointer overflow-hidden"
+      className="card cursor-pointer overflow-hidden w-[280px] h-[400px] sm:h-[355px] flex flex-col justify-between pb-5"
       onClick={() => setShowInfo()}
     >
       <img className="w-[95%] h-[160px] rounded-xl " src={imgSrc}></img>
@@ -18,10 +18,11 @@ const ProjectCard = ({
         {title}
       </h1>
       <h2 className="text-md font-medium">{subtitle}</h2>
+      <div className="text-center">
       <p className="mt-2 text-[#a2ff00] font-medium">
         Languages Used: {languages}
       </p>
-      <p className="mb-3 text-[#a2ff00] font-medium">{languages2}</p>
+      <p className="mb-3 text-[#a2ff00] font-medium">{languages2}</p></div>
       <a href={"/"} target="_blank">
         <button className="project-button">
           <div className="svg-wrapper-1">

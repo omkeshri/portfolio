@@ -15,13 +15,13 @@ console.log(parameters.vid)
       {showInfo && (
         <motion.div
           key="modal"
-          className="fixed top-0 left-0 h-screen w-full flex justify-center items-center"
+          className="fixed top-0 left-0 h-full w-full flex justify-center items-center"
           initial={{ y: "-100vh" }}
           animate={{ y: 0 }}
           exit={{ y: "-100vh" }}
           transition={{ type: "spring", stiffness: 120, duration: 0.6 }}
         >
-          <div className="w-[80%] h-[80%] bg-[#fff] rounded-2xl overflow-hidden flex items-center flex-col py-5 gap-y-4 justify-center">
+          <div className="w-full md:w-[80%] h-[60%] lg:h-[65%] xl:h-[80%] bg-[#fff] rounded-2xl overflow-hidden flex items-center flex-col py-5 gap-y-4 justify-center">
             <AnimatePresence mode="wait">
               {slide === 0 && (
                 <motion.div
@@ -40,7 +40,7 @@ console.log(parameters.vid)
 
               {slide === 1 && (
                 <motion.div
-                  className="flex flex-col items-center"
+                  className="w-[80%] flex flex-col items-center"
                   key="slide1"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
@@ -50,7 +50,7 @@ console.log(parameters.vid)
                     title={parameters.title}
                     subTitle={parameters.subtitle}
                   />
-                  <div className="flex justify-between w-full">
+                  <div className="flex justify-between w-full flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
                     <ProjectButton
                       icon="Previous"
                       name="↫"
@@ -70,14 +70,14 @@ console.log(parameters.vid)
 
               {slide === 2 && (
                 <motion.div
-                  className="flex flex-col items-center p-4 overflow-scroll"
+                  className="w-[80%] flex flex-col items-center p-4 overflow-scroll"
                   key="slide2"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
                   exit={{ x: "-100vw" }}
                 >
                   <ProjectDescription content={parameters.description} />
-                  <div className="flex justify-between w-full">
+                  <div className="flex justify-between w-full flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
                     <ProjectButton
                       icon="Previous"
                       name="↫"
@@ -97,14 +97,14 @@ console.log(parameters.vid)
 
               {slide === 3 && (
                 <motion.div
-                  className="flex flex-col items-center p-4 overflow-scroll"
+                  className="w-[80%] flex flex-col items-center p-4 overflow-scroll"
                   key="slide3"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
                   exit={{ x: "-100vw" }}
                 >
                   <ProjectAbout content={parameters.technologies} />
-                  <div className="flex justify-between w-full">
+                  <div className="flex justify-between w-full flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
                     <ProjectButton
                       icon="Previous"
                       name="↫"
@@ -123,14 +123,14 @@ console.log(parameters.vid)
               )}
               {slide === 4 && (
                 <motion.div
-                  className="flex flex-col items-center p-4 overflow-scroll"
+                  className="w-[80%] flex flex-col items-center p-4 overflow-scroll"
                   key="slide4"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
                   exit={{ x: "-100vw" }}
                 >
                   <ProjectAbout content={parameters.features} />
-                  <div className="flex justify-between w-full">
+                  <div className="flex justify-between w-full flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
                     <ProjectButton
                       icon="Previous"
                       name="↫"
@@ -150,14 +150,14 @@ console.log(parameters.vid)
 
               {slide === 5 && (
                 <motion.div
-                  className="flex flex-col items-center p-4 overflow-scroll"
+                  className="w-[80%] flex flex-col items-center p-4 overflow-scroll"
                   key="slide5"
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}
                   exit={{ x: "-100vw" }}
                 >
                   <ProjectLinks />
-                  <div className="flex justify-between w-full">
+                  <div className="flex justify-between w-full flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
                     <ProjectButton
                       icon="Previous"
                       name="↫"

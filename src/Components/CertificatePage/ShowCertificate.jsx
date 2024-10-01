@@ -39,7 +39,7 @@ const ShowCertificate = ({ name, showItems, setShowIndex, imgSrc }) => {
       </div>
       {showItems && (
         <motion.img
-          className="w-[98%] h-[40rem] rounded-b-lg -rounded-t-lg"
+          className="w-[98%] xl:h-[40rem] rounded-b-lg -rounded-t-lg"
           src={images[imgSrc]}
           initial={{ opacity: 0, y:'-100vh' }}
           animate={{ opacity: 1, y:0 }}

@@ -1,24 +1,28 @@
-import medicozImage from "../Images/Medicoz.png"
-import foodifyImage from "../Images/Foodify.png"
-import youtubeImage from "../Images/Youtube.png"
-import netflixImage from "../Images/Netflix.png"
-import socialDashboardImage from "../Images/SocialDashboard.png"
-import customerManagementImage from "../Images/CustomerManagement.png"
-import blackJackImage from "../Images/BlackJack.png"
-import leadTrackerImage from "../Images/LeadTracker.png"
-import quizGameImage from "../Images/QuizGame.png"
-import blackJackVideo from "../Assets/BlackJack.mp4"
+import medicozImage from "../Images/Medicoz.png";
+import foodifyImage from "../Images/Foodify.png";
+import youtubeImage from "../Images/Youtube.png";
+import netflixImage from "../Images/Netflix.png";
+import socialDashboardImage from "../Images/SocialDashboard.png";
+import customerManagementImage from "../Images/CustomerManagement.png";
+import blackJackImage from "../Images/BlackJack.png";
+import leadTrackerImage from "../Images/LeadTracker.png";
+import quizGameImage from "../Images/QuizGame.png";
+import medicozVideo from "../Assets/Medicoz.mp4";
+import foodifyVideo from "../Assets/Foodify.mp4";
+import customerManagerVideo from "../Assets/CustomerManager.mp4";
+import blackJackVideo from "../Assets/BlackJack.mp4";
+import socialDashboardVideo from "../Assets/SocialDashboard.mp4";
 import { FaReact as React } from "react-icons/fa";
 import { TbFileTypeJsx as Jsx } from "react-icons/tb";
 import { SiRedux as Redux } from "react-icons/si";
 import { SiSwiggy as Swiggy } from "react-icons/si";
 import { RiTailwindCssFill as Tailwind } from "react-icons/ri";
 import { IoLogoJavascript as Js } from "react-icons/io";
-import { IoCafeSharp as Restaurant} from "react-icons/io5";
-import { FaSearch as Search} from "react-icons/fa";
-import { FaCartShopping as Cart} from "react-icons/fa6";
-import { MdManageAccounts as Manage} from "react-icons/md";
-import { DiResponsive as Responsive} from "react-icons/di";
+import { IoCafeSharp as Restaurant } from "react-icons/io5";
+import { FaSearch as Search } from "react-icons/fa";
+import { FaCartShopping as Cart } from "react-icons/fa6";
+import { MdManageAccounts as Manage } from "react-icons/md";
+import { DiResponsive as Responsive } from "react-icons/di";
 import { IoToggle as Toggle } from "react-icons/io5";
 import { BsFiletypeScss as Scss } from "react-icons/bs";
 import { FaHtml5 as Html } from "react-icons/fa";
@@ -28,15 +32,26 @@ import { MdCalculate as Calculate } from "react-icons/md";
 import { IoReceipt as Receipt } from "react-icons/io5";
 import { FaSave as SaveInfo } from "react-icons/fa";
 import { TfiWrite as Manual } from "react-icons/tfi";
-import { TbAutomaticGearbox as Automatic} from "react-icons/tb";
+import { TbAutomaticGearbox as Automatic } from "react-icons/tb";
 import { CiBookmarkCheck as View } from "react-icons/ci";
-import { GrStorage as Storage} from "react-icons/gr";
+import { GrStorage as Storage } from "react-icons/gr";
 import { IoLogoCss3 as Css } from "react-icons/io";
 import { GiPerspectiveDiceSixFacesRandom as Random } from "react-icons/gi";
-import { FaMusic as Music} from "react-icons/fa";
+import { FaMusic as Music } from "react-icons/fa";
 import { MdScoreboard as Score } from "react-icons/md";
 import { FaPython as Python } from "react-icons/fa";
 import { FaGamepad as Game } from "react-icons/fa";
+import { FaGoogle as Google } from "react-icons/fa";
+import { SiRazorpay as RazorPay } from "react-icons/si";
+import { MdAttachEmail as Email } from "react-icons/md";
+import { FaNode as Node } from "react-icons/fa";
+import { SiMongodb as MongoDB } from "react-icons/si";
+import { MdHealthAndSafety as Health } from "react-icons/md";
+import { MdOnlinePrediction as Prediction } from "react-icons/md";
+import { FaUserDoctor as Doctor } from "react-icons/fa6";
+import { MdPayment as Transaction } from "react-icons/md";
+import { IoMdContacts as Contact} from "react-icons/io";
+import { SiChatbot as ChatBot} from "react-icons/si";
 
 
 export const certificates = [
@@ -51,7 +66,6 @@ export const certificates = [
   { title: "Introduction to Large Language Models", name: "llm" },
   { title: "Generative AI with Large Language Models", name: "genaillm" },
 ];
-
 
 export const projects = [
   {
@@ -83,7 +97,7 @@ export const projects = [
 
   {
     id: 4,
-    title: "Netflix/GPT",
+    title: "Netflix-GPT",
     subtitle: "Netflix with GPT Search",
     languages: "React, JavaScript,",
     languages2: "Tailwind",
@@ -137,7 +151,97 @@ export const projects = [
 ];
 
 
-const foodifyDescription = "A React-based food ordering website integrated with the Swiggy API. This application allows users to browse restaurant menus, place orders, and manage their cart. Redux is used for efficient state management, while Tailwind CSS ensures a responsive and modern design."
+
+const medicozDescription =
+  "Medicoz collects user health data through a web interface, which is processed by machine learning models hosted on a Flask backend. These models analyze the data to predict the severity of different health conditions, with the results displayed on the React frontend, providing users with personalized health insights. Based on these predictions, Medicoz recommends nearby doctors and clinics using the Google Places API. Additionally, the platform features a shopping section for health monitoring devices, with transactions managed through Razorpay. User data and predictions are handled securely throughout the process.";
+
+const medicozFeatures = {
+  title: "Features",
+
+  li1: "Health Data Collection:",
+  li1About: "Collects user health data through a user-friendly web interface.",
+  li1Icon: Health,
+
+  li2: "Severity Prediction & Personalized Insights:",
+  li2About:
+    "Processes health data using machine learning models to predict the severity of various health conditions. Displays personalized health insights based on user data and predictions.",
+  li2Icon: Prediction,
+
+  li3: "Doctor Recommendations:",
+  li3About:
+    "Recommends nearby doctors and clinics using the Google Places API based on health predictions.",
+  li3Icon: Doctor,
+
+  li4: "Health Device Shopping:",
+  li4About:
+    "Offers a shopping section for health monitoring devices with a seamless purchasing experience.",
+  li4Icon: Cart,
+
+  li5: "Secure Transactions:",
+  li5About:
+    "Handles all transactions securely through Razorpay to ensure user data safety.",
+  li5Icon: Transaction,
+
+  li6: "Contact Page:",
+  li6About:
+    "A contact page is also available, utilizing EmailJS API for easy user communication.",
+  li6Icon: Contact,
+
+  li7: "Chat Bot",
+  li7About:
+    "Provides users with information about the symptoms of diseases based on their input.",
+  li7Icon: ChatBot,
+};
+
+const medicozTechnologies = {
+  title: "Technologies Used",
+
+  li1: "Front-end:",
+  li1About: "HTML, CSS, React, and Tailwind for a responsive user interface.",
+  li1Icon: React,
+
+  li2: "Back-end:",
+  li2About:
+    "Node.js, Express.js, and Flask for server-side development and enabling predictive models.",
+  li2Icon: Node,
+
+  li3: "Database:",
+  li3About: "MongoDB for managing user authentication and health data.",
+  li3Icon: MongoDB,
+
+  li4: "Google Places API:",
+  li4About:
+    "Provides recommendations for nearby doctors and hospitals based on disease.",
+  li4Icon: Google,
+
+  li5: "RazorPay API:",
+  li5About:
+    "Handles transactions in the health monitoring device store for a seamless purchasing experience.",
+  li5Icon: RazorPay,
+
+  li6: "EmailJS API:",
+  li6About:
+    "Facilitates user communication through email for contact features.",
+  li6Icon: Email,
+
+  li7: "BotPress:",
+  li7About:
+    "Enables automated chatbot communication for user support and inquiries.",
+  li7Icon: ChatBot,
+};
+
+const medicozParameters = {
+  vid: medicozVideo,
+  title: "Medicoz",
+  subtitle: "Diagnosing Today Securing Tomorrow",
+  technologies: medicozTechnologies,
+  description: medicozDescription,
+  features: medicozFeatures,
+};
+
+
+const foodifyDescription =
+  "A React-based food ordering website integrated with the Swiggy API. This application allows users to browse restaurant menus, place orders, and manage their cart. Redux is used for efficient state management, while Tailwind CSS ensures a responsive and modern design.";
 
 const foodifyTechnologies = {
   title: "Technologies Used",
@@ -159,6 +263,9 @@ const foodifyTechnologies = {
   li6: "JavaScript (ES6+):",
   li6About: "Core language used for development.",
   li6Icon: Js,
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const foodifyFeatures = {
@@ -187,23 +294,25 @@ const foodifyFeatures = {
   li5Icon: Responsive,
 
   li6: "",
-  li6About:
-    "",
+  li6About: "",
   li6Icon: "nothing",
 
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const foodifyParameters = {
-  vid: blackJackVideo,
+  vid: foodifyVideo,
   title: "Foodify",
   subtitle: "Food at Your Doorstep",
   technologies: foodifyTechnologies,
   description: foodifyDescription,
   features: foodifyFeatures,
-}
+};
 
-
-const socialDashboardDescription = "This project is a responsive social media dashboard that allows users to switch between dark and light themes. The dashboard is built using HTML and SCSS, providing a modern and visually appealing interface."
+const socialDashboardDescription =
+  "This project is a responsive social media dashboard that allows users to switch between dark and light themes. The dashboard is built using HTML and SCSS, providing a modern and visually appealing interface.";
 
 const socialDashboardFeatures = {
   title: "Features",
@@ -213,12 +322,12 @@ const socialDashboardFeatures = {
   li1Icon: Toggle,
 
   li2: "Responsive Design:",
-  li2About: "Optimized for different screen sizes, ensuring a great user experience on both desktop and mobile devices.",
+  li2About:
+    "Optimized for different screen sizes, ensuring a great user experience on both desktop and mobile devices.",
   li2Icon: Responsive,
 
   li3: "SCSS for Styling:",
-  li3About:
-    "Utilizes SCSS for more efficient and maintainable CSS.",
+  li3About: "Utilizes SCSS for more efficient and maintainable CSS.",
   li3Icon: Scss,
 
   li4: "",
@@ -226,15 +335,16 @@ const socialDashboardFeatures = {
   li4Icon: "nothing",
 
   li5: "",
-  li5About:
-    "",
+  li5About: "",
   li5Icon: "nothing",
 
   li6: "",
-  li6About:
-    "",
+  li6About: "",
   li6Icon: "nothing",
 
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const socialDashboardTechnologies = {
@@ -243,10 +353,12 @@ const socialDashboardTechnologies = {
   li1About: "For structuring the content.",
   li1Icon: Html,
   li2: "SCSS:",
-  li2About: "For styling, allowing more efficient and organized CSS with variables, nesting, and mixins.",
+  li2About:
+    "For styling, allowing more efficient and organized CSS with variables, nesting, and mixins.",
   li2Icon: Scss,
   li3: "JavaScript:",
-  li3About: "For adding interactivity and handling the dark/light mode toggle functionality.",
+  li3About:
+    "For adding interactivity and handling the dark/light mode toggle functionality.",
   li3Icon: Js,
   li4: "",
   li4About: "",
@@ -257,25 +369,27 @@ const socialDashboardTechnologies = {
   li6: "",
   li6About: "",
   li6Icon: "nothing",
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const socialDashboardParameters = {
-  vid: blackJackVideo,
+  vid: socialDashboardVideo,
   title: "Social Media Dashboard",
   subtitle: "Dark/Light Toggle",
   technologies: socialDashboardTechnologies,
   description: socialDashboardDescription,
   features: socialDashboardFeatures,
-}
+};
 
-
-const customerManagerDescription = "This C program is a Customer Management System designed to manage customer orders, calculate bills, apply discounts, and print receipts. The system handles order taking, item cancellation, and payment processing, making it a comprehensive solution for small cafe operations."
+const customerManagerDescription =
+  "This C program is a Customer Management System designed to manage customer orders, calculate bills, apply discounts, and print receipts. The system handles order taking, item cancellation, and payment processing, making it a comprehensive solution for small cafe operations.";
 
 const customerManagerFeatures = {
   title: "Features",
   li1: "Menu Display:",
-  li1About:
-    "Displays a menu of available items with their prices",
+  li1About: "Displays a menu of available items with their prices",
   li1Icon: Menu,
 
   li2: "Order Management:",
@@ -283,12 +397,12 @@ const customerManagerFeatures = {
   li2Icon: Manage,
 
   li3: "Cancellation:",
-  li3About:
-    "Customers can cancel items from their orders.",
+  li3About: "Customers can cancel items from their orders.",
   li3Icon: Cancel,
 
   li4: "Billing and Discount Calculation:",
-  li4About: "Calculates the total bill, applies discounts based on the bill amount, and adds GST.",
+  li4About:
+    "Calculates the total bill, applies discounts based on the bill amount, and adds GST.",
   li4Icon: Calculate,
 
   li5: "Receipt Printing:",
@@ -297,10 +411,12 @@ const customerManagerFeatures = {
   li5Icon: Receipt,
 
   li6: "Customer Information",
-  li6About:
-    "Records customer name, address, and mobile number.",
+  li6About: "Records customer name, address, and mobile number.",
   li6Icon: SaveInfo,
 
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const customerManagerTechnologies = {
@@ -323,29 +439,115 @@ const customerManagerTechnologies = {
   li6: "",
   li6About: "",
   li6Icon: "nothing",
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const customerManagerParameters = {
-  vid: blackJackVideo,
+  vid: customerManagerVideo,
   title: "Customer Management System",
   subtitle: "Manage Your Customer",
   technologies: customerManagerTechnologies,
   description: customerManagerDescription,
   features: customerManagerFeatures,
-}
+};
 
 
-const leadTrackerDesciption = "This project is a simple lead tracker web application built with HTML, CSS, and JavaScript. The app allows users to save and manage URLs of websites they want to keep track of and also to take quick notes for later use. Users can add URLs manually through an input field or automatically save the current browser tab's URL. The app also provides functionality to clear all saved leads."
+const blackJackDescription =
+  "This is a simple implementation of the classic card game BlackJack using HTML, CSS, and JavaScript. The game allows a player to start a game, draw new cards, and aims to get a sum of cards as close to 21 as possible without exceeding it.";
+
+const blackJackFeatures = {
+  title: "Features",
+
+  li1: "Start Game:",
+  li1About: "Initializes a new game with two random cards.",
+  li1Icon: "Start",
+
+  li2: "Draw New Card:",
+  li2About:
+    "Allows the player to draw a new card if their sum is less than 21.",
+  li2Icon: "Draw",
+
+  li3: "Game Status:",
+  li3About:
+    "Displays messages to the player about the current game status, such as whether they can draw a new card, have won (BlackJack), or have lost.",
+  li3Icon: "Status",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+};
+
+const blackJackTechnologies = {
+  title: "Technologies Used",
+
+  li1: "HTML:",
+  li1About:
+    "Contains the structure of the game, including buttons for starting the game and drawing new cards, and elements to display the game status, cards, and sum.",
+  li1Icon: "Html",
+
+  li2: "CSS:",
+  li2About: "Basic styling to make the game look visually appealing.",
+  li2Icon: "Css",
+
+  li3: "JavaScript:",
+  li3About: "For adding interactivity and handling game logic.",
+  li3Icon: "Js",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+};
+
+const blackJackParameters = {
+  vid: blackJackVideo,
+  title: "Black Jack",
+  subtitle: "A Fun & Interactive Game",
+  technologies: blackJackTechnologies,
+  description: blackJackDescription,
+  features: blackJackFeatures,
+};
+
+
+const leadTrackerDesciption =
+  "This project is a simple lead tracker web application built with HTML, CSS, and JavaScript. The app allows users to save and manage URLs of websites they want to keep track of and also to take quick notes for later use. Users can add URLs manually through an input field or automatically save the current browser tab's URL. The app also provides functionality to clear all saved leads.";
 
 const leadTrackerFeatures = {
   title: "Features",
 
   li1: "Add Leads Manually:",
-  li1About: "Users can type a URL or take a quick note into an input field and click a button to save it.",
+  li1About:
+    "Users can type a URL or take a quick note into an input field and click a button to save it.",
   li1Icon: Manual,
 
   li2: "Add Leads Automatically:",
-  li2About: "Users can click a button to save the URL of the current browser tab.",
+  li2About:
+    "Users can click a button to save the URL of the current browser tab.",
   li2Icon: Automatic,
 
   li3: "View Leads:",
@@ -353,16 +555,22 @@ const leadTrackerFeatures = {
   li3Icon: View,
 
   li4: "Delete Leads:",
-  li4About: "Users can clear all saved URLs with a double-click on the delete button.",
+  li4About:
+    "Users can clear all saved URLs with a double-click on the delete button.",
   li4Icon: Cancel,
 
   li5: "Persistent Storage:",
-  li5About: "Saved URLs are stored in the browser's local storage, allowing them to persist between sessions.",
+  li5About:
+    "Saved URLs are stored in the browser's local storage, allowing them to persist between sessions.",
   li5Icon: Storage,
 
   li6: "",
   li6About: "",
   li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const leadTrackerTechnologies = {
@@ -376,11 +584,13 @@ const leadTrackerTechnologies = {
   li2Icon: Css,
 
   li3: "JavaScript:",
-  li3About: "For adding interactivity and handling dynamic functionalities like order management.",
+  li3About:
+    "For adding interactivity and handling dynamic functionalities like order management.",
   li3Icon: Js,
 
   li4: "Local Storage:",
-  li4About: "For storing customer information, order details, and cancelled items persistently.",
+  li4About:
+    "For storing customer information, order details, and cancelled items persistently.",
   li4Icon: Storage,
 
   li5: "",
@@ -390,6 +600,10 @@ const leadTrackerTechnologies = {
   li6: "",
   li6About: "",
   li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const leadTrackerParameters = {
@@ -399,20 +613,22 @@ const leadTrackerParameters = {
   technologies: leadTrackerTechnologies,
   description: leadTrackerDesciption,
   features: leadTrackerFeatures,
-}
+};
 
-
-const quizGameDescription = "This Python-based quiz game is an interactive and fun way to test your knowledge on various topics. The game uses the random module to present questions in a random order, ensuring a unique experience every time you play. Additionally, the pygame library's mixer module is used to add background music, making the game more engaging."
+const quizGameDescription =
+  "This Python-based quiz game is an interactive and fun way to test your knowledge on various topics. The game uses the random module to present questions in a random order, ensuring a unique experience every time you play. Additionally, the pygame library's mixer module is used to add background music, making the game more engaging.";
 
 const quizGameFeatures = {
   title: "Features",
 
   li1: "Randomized Questions:",
-  li1About: "Questions are presented in a random order to keep the game fresh and challenging.",
+  li1About:
+    "Questions are presented in a random order to keep the game fresh and challenging.",
   li1Icon: Random,
 
   li2: "Background Music:",
-  li2About: "Enjoy background music while playing, thanks to the pygame library's mixer module.",
+  li2About:
+    "Enjoy background music while playing, thanks to the pygame library's mixer module.",
   li2Icon: Music,
 
   li3: "Interactive Gameplay:",
@@ -430,6 +646,10 @@ const quizGameFeatures = {
   li6: "",
   li6About: "",
   li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const quizGameTechnologies = {
@@ -458,6 +678,10 @@ const quizGameTechnologies = {
   li6: "",
   li6About: "",
   li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
 };
 
 const quizGameParameters = {
@@ -467,95 +691,14 @@ const quizGameParameters = {
   technologies: quizGameTechnologies,
   description: quizGameDescription,
   features: quizGameFeatures,
-}
-
-
-const blackJackDescriptino = "This is a simple implementation of the classic card game BlackJack using HTML, CSS, and JavaScript. The game allows a player to start a game, draw new cards, and aims to get a sum of cards as close to 21 as possible without exceeding it."
-
-const blackJackFeatures = {
-  title: "Features",
-
-  li1: "Start Game:",
-  li1About: "Initializes a new game with two random cards.",
-  li1Icon: "Start",
-
-  li2: "Draw New Card:",
-  li2About: "Allows the player to draw a new card if their sum is less than 21.",
-  li2Icon: "Draw",
-
-  li3: "Game Status:",
-  li3About: "Displays messages to the player about the current game status, such as whether they can draw a new card, have won (BlackJack), or have lost.",
-  li3Icon: "Status",
-
-  li4: "",
-  li4About: "",
-  li4Icon: "nothing",
-
-  li5: "",
-  li5About: "",
-  li5Icon: "nothing",
-
-  li6: "",
-  li6About: "",
-  li6Icon: "nothing",
 };
-
-const blackJackTechnologies = {
-  title: "Technologies Used",
-
-  li1: "HTML:",
-  li1About: "Contains the structure of the game, including buttons for starting the game and drawing new cards, and elements to display the game status, cards, and sum.",
-  li1Icon: "Html",
-
-  li2: "CSS:",
-  li2About: "Basic styling to make the game look visually appealing.",
-  li2Icon: "Css",
-
-  li3: "JavaScript:",
-  li3About: "For adding interactivity and handling game logic.",
-  li3Icon: "Js",
-
-  li4: "",
-  li4About: "",
-  li4Icon: "nothing",
-
-  li5: "",
-  li5About: "",
-  li5Icon: "nothing",
-
-  li6: "",
-  li6About: "",
-  li6Icon: "nothing",
-};
-
-const blackJackParameters = {
-  vid: blackJackVideo,
-  title: "Black Jack",
-  subtitle: "A Fun & Interactive Game",
-  technologies: blackJackTechnologies,
-  description: blackJackDescriptino,
-  features: blackJackFeatures,
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 
 export const projectParameters = {
-  1: leadTrackerParameters,
+  1: medicozParameters,
   2: foodifyParameters,
   3: leadTrackerParameters,
   4: leadTrackerParameters,
@@ -564,5 +707,4 @@ export const projectParameters = {
   7: blackJackParameters,
   8: leadTrackerParameters,
   9: quizGameParameters,
-  
-}
+};

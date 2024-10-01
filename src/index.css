@@ -155,8 +155,6 @@
   }
 
   .card {
-    width: 270px;
-    height: 355px;
     background: #07182e;
     position: relative;
     display: flex;
@@ -172,7 +170,7 @@
   .card h1,
   .card p,
   .card button,
-  .card a {
+  .card a, .card div{
     z-index: 1;
   }
 
@@ -215,12 +213,14 @@
     );
     animation: rotBGimg 3.5s linear infinite;
   }
+
+
   .project-button {
     font-family: inherit;
-    font-size: 20px;
     background: rgb(218, 217, 217);
-    color: black;
+    color: black; 
     padding: 0.3em 1em;
+      font-size: 20px;
     padding-left: 0.9em;
     display: flex;
     align-items: center;

@@ -15,7 +15,7 @@ const Certificates = () => {
     >
       {certificates.map((certificate, index) => (
         <motion.div
-          className="w-3/4"
+          className="w-[90%] md:w-3/4"
           key={certificate.name}
           variants={certificateContainerVariants}
           initial="hidden"

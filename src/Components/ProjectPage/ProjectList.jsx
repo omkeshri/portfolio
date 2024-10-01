@@ -11,7 +11,7 @@ const ProjectList = ({ showInfo, setShowInfo }) => {
         {!showInfo && (
           <motion.div
             key="project-cards"
-            className="pt-32 pb-20 justify-between  gap-y-20 flex flex-wrap px-28 text-white"
+            className="pt-32 pb-20  gap-y-20 flex sm:flex-row flex-col items-center sm:items-start sm:flex-wrap justify-between sm:px-10 md:px-28 lg:px-16 xl:px-28 text-white"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

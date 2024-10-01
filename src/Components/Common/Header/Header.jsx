@@ -23,7 +23,7 @@ const Header = () => {
       <Link to="/">
         <motion.div
           className={`box sm:hover:w-[170px] ${
-            location.pathname === "/" ? "opacity-0" : ""
+            location.pathname === "/" ? "hidden" : ""
           }`}
           initial={{ x: "-10vw" }}
           animate={{ x: 0 }}
@@ -58,7 +58,7 @@ const Header = () => {
       >
         <motion.div
           className={`box sm:hover:w-[170px] ${
-            location.pathname === "/" ? "opacity-0" : ""
+            location.pathname === "/" ? "hidden" : ""
           }`}
           initial={{ x: "10vw" }}
           animate={{ x: 0 }}
