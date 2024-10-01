@@ -46,9 +46,9 @@ const Header = () => {
         <Link to={"https://www.codechef.com/users/omkeshari"} target="_blank">
           <HeaderLink Icon={SiCodechef} />
         </Link>
-        <Link to={"https://www.instagram.com/omkeshri_"} target="_blank">
+        {/* <Link to={"https://www.instagram.com/omkeshri_"} target="_blank">
           <HeaderLink Icon={FaInstagram} />
-        </Link>
+        </Link> */}
         <Link to={"https://t.me/om_keshari"} target="_blank">
           <HeaderLink Icon={FaTelegramPlane} />
         </Link>

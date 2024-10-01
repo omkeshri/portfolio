@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../../Utils/constants";
 
-const Container = ({ showInfo, setShowInfo }) => {
+const ProjectList = ({ showInfo, setShowInfo }) => {
     const handleShowInfo = () => {
         setShowInfo();
       };
@@ -19,9 +19,9 @@ const Container = ({ showInfo, setShowInfo }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {projects.map((project) => (
+            {projects.map((project,index) => (
               <ProjectCard
-                setShowInfo={handleShowInfo}
+                setShowInfo={() => setShowInfo(index+1)}
                 key={project.id}
                 title={project.title}
                 subtitle={project.subtitle}
@@ -37,4 +37,4 @@ const Container = ({ showInfo, setShowInfo }) => {
   )
 }
 
-export default Container
+export default ProjectList

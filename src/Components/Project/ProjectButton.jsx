@@ -1,9 +1,9 @@
 import React from "react";
 
 
-const ProjectButton = ({name, icon, setSlide}) => {
+const ProjectButton = ({name, icon, setSlide, buttonClass}) => {
   return (
-    <button className="next-button" onClick={()=>setSlide()}>
+    <button className={buttonClass} onClick={()=>setSlide()}>
       <svg
         height="24"
         width="24"
