@@ -33,12 +33,12 @@ const InfoContainer = () => {
         <Button name={"ExpressJs"} delay={0.3} />
         <Button name={"NextJs"} delay={0.4} />
         <Button name={"MongoDB"} delay={0.5} />
+        <Button name={"C/C++"} delay={1.1} />
         <Button name={"Framer Motion"} delay={0.6} />
         <Button name={"Tailwind CSS"} delay={0.7} />
         <Button name={"HTML5"} delay={0.8} />
         <Button name={"CSS"} delay={0.9} />
         <Button name={"JavaScript"} delay={1} />
-        <Button name={"C/C++"} delay={1.1} />
       </div>
 
     </div>

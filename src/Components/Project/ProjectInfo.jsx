@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectInfo = ({ showInfo, setShowInfo, parameters }) => {
   const [slide, setSlide] = useState(0);
-
+console.log(parameters.vid)
   return (
     <AnimatePresence mode="wait">
       {showInfo && (
@@ -33,7 +33,7 @@ const ProjectInfo = ({ showInfo, setShowInfo, parameters }) => {
                 >
                   <ProjectVideo
                     setSlide={() => setSlide(1)}
-                    imgSrc={parameters.image}
+                    vidSrc={parameters.vid}
                   />
                 </motion.div>
               )}

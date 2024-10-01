@@ -7,6 +7,7 @@ import customerManagementImage from "../Images/CustomerManagement.png"
 import blackJackImage from "../Images/BlackJack.png"
 import leadTrackerImage from "../Images/LeadTracker.png"
 import quizGameImage from "../Images/QuizGame.png"
+import blackJackVideo from "../Images/BlackJack.mp4"
 import { FaReact as React } from "react-icons/fa";
 import { TbFileTypeJsx as Jsx } from "react-icons/tb";
 import { SiRedux as Redux } from "react-icons/si";
@@ -31,7 +32,11 @@ import { TbAutomaticGearbox as Automatic} from "react-icons/tb";
 import { CiBookmarkCheck as View } from "react-icons/ci";
 import { GrStorage as Storage} from "react-icons/gr";
 import { IoLogoCss3 as Css } from "react-icons/io";
-
+import { GiPerspectiveDiceSixFacesRandom as Random } from "react-icons/gi";
+import { FaMusic as Music} from "react-icons/fa";
+import { MdScoreboard as Score } from "react-icons/md";
+import { FaPython as Python } from "react-icons/fa";
+import { FaGamepad as Game } from "react-icons/fa";
 
 
 export const certificates = [
@@ -189,7 +194,7 @@ const foodifyFeatures = {
 };
 
 const foodifyParameters = {
-  image: foodifyImage,
+  vid: blackJackVideo,
   title: "Foodify",
   subtitle: "Food at Your Doorstep",
   technologies: foodifyTechnologies,
@@ -255,7 +260,7 @@ const socialDashboardTechnologies = {
 };
 
 const socialDashboardParameters = {
-  image: socialDashboardImage,
+  vid: blackJackVideo,
   title: "Social Media Dashboard",
   subtitle: "Dark/Light Toggle",
   technologies: socialDashboardTechnologies,
@@ -321,7 +326,7 @@ const customerManagerTechnologies = {
 };
 
 const customerManagerParameters = {
-  image: customerManagementImage,
+  vid: blackJackVideo,
   title: "Customer Management System",
   subtitle: "Manage Your Customer",
   technologies: customerManagerTechnologies,
@@ -388,13 +393,161 @@ const leadTrackerTechnologies = {
 };
 
 const leadTrackerParameters = {
-  image: leadTrackerImage,
+  vid: blackJackVideo,
   title: "Leads Tracker",
   subtitle: "Chrome Extension for taking notes",
   technologies: leadTrackerTechnologies,
   description: leadTrackerDesciption,
   features: leadTrackerFeatures,
 }
+
+
+const quizGameDescription = "This Python-based quiz game is an interactive and fun way to test your knowledge on various topics. The game uses the random module to present questions in a random order, ensuring a unique experience every time you play. Additionally, the pygame library's mixer module is used to add background music, making the game more engaging."
+
+const quizGameFeatures = {
+  title: "Features",
+
+  li1: "Randomized Questions:",
+  li1About: "Questions are presented in a random order to keep the game fresh and challenging.",
+  li1Icon: Random,
+
+  li2: "Background Music:",
+  li2About: "Enjoy background music while playing, thanks to the pygame library's mixer module.",
+  li2Icon: Music,
+
+  li3: "Interactive Gameplay:",
+  li3About: "User-friendly interface for answering quiz questions.",
+  li3Icon: Game,
+
+  li4: "Scoring System:",
+  li4About: "Track your score as you play to see how well you perform.",
+  li4Icon: Score,
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+};
+
+const quizGameTechnologies = {
+  title: "Technologies Used",
+
+  li1: "Python:",
+  li1About: "For implementing the game logic and functionality.",
+  li1Icon: Python,
+
+  li2: "Pygame:",
+  li2About: "For creating the game interface and handling graphics and sound.",
+  li2Icon: Game,
+
+  li3: "",
+  li3About: "",
+  li3Icon: "nothing",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+};
+
+const quizGameParameters = {
+  vid: blackJackVideo,
+  title: "Quiz Game",
+  subtitle: "A Fun & Interactive Game",
+  technologies: quizGameTechnologies,
+  description: quizGameDescription,
+  features: quizGameFeatures,
+}
+
+
+const blackJackDescriptino = "This is a simple implementation of the classic card game BlackJack using HTML, CSS, and JavaScript. The game allows a player to start a game, draw new cards, and aims to get a sum of cards as close to 21 as possible without exceeding it."
+
+const blackJackFeatures = {
+  title: "Features",
+
+  li1: "Start Game:",
+  li1About: "Initializes a new game with two random cards.",
+  li1Icon: "Start",
+
+  li2: "Draw New Card:",
+  li2About: "Allows the player to draw a new card if their sum is less than 21.",
+  li2Icon: "Draw",
+
+  li3: "Game Status:",
+  li3About: "Displays messages to the player about the current game status, such as whether they can draw a new card, have won (BlackJack), or have lost.",
+  li3Icon: "Status",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+};
+
+const blackJackTechnologies = {
+  title: "Technologies Used",
+
+  li1: "HTML:",
+  li1About: "Contains the structure of the game, including buttons for starting the game and drawing new cards, and elements to display the game status, cards, and sum.",
+  li1Icon: "Html",
+
+  li2: "CSS:",
+  li2About: "Basic styling to make the game look visually appealing.",
+  li2Icon: "Css",
+
+  li3: "JavaScript:",
+  li3About: "For adding interactivity and handling game logic.",
+  li3Icon: "Js",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+};
+
+const blackJackParameters = {
+  vid: blackJackVideo,
+  title: "Black Jack",
+  subtitle: "A Fun & Interactive Game",
+  technologies: blackJackTechnologies,
+  description: blackJackDescriptino,
+  features: blackJackFeatures,
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -408,7 +561,8 @@ export const projectParameters = {
   4: leadTrackerParameters,
   5: socialDashboardParameters,
   6: customerManagerParameters,
-  7: leadTrackerParameters,
+  7: blackJackParameters,
   8: leadTrackerParameters,
-  9: leadTrackerParameters,
+  9: quizGameParameters,
+  
 }
