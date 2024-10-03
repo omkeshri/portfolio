@@ -15,7 +15,7 @@ This portfolio website provides an overview of my professional skills, achieveme
 - **Modern Styling**: The website's look and feel are enhanced by the utility-first approach of Tailwind CSS.
 
 ## Technologies Used
-- **React**: For building the UI and managing components.
+- **React(Vite)**: For building the UI and managing components.
 - **Framer Motion**: For animations and transitions.
 - **Tailwind CSS**: For styling and layout.
 - **React Router**: For handling routing between different pages.
@@ -24,12 +24,12 @@ This portfolio website provides an overview of my professional skills, achieveme
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/portfolio-website.git
+    git clone https://github.com/omkeshri/portfolio.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd portfolio-website
+    cd portfolio
     ```
 
 3. Install the dependencies:
