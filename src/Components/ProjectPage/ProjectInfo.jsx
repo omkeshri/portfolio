@@ -156,7 +156,7 @@ console.log(parameters.vid)
                   animate={{ x: 0 }}
                   exit={{ x: "-100vw" }}
                 >
-                  <ProjectLinks />
+                  <ProjectLinks demo={parameters.demo} sourceCode={parameters.sourceCode}/>
                   <div className="flex justify-between w-full flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
                     <ProjectButton
                       icon="Previous"

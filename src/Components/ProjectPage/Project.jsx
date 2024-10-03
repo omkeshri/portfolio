@@ -30,7 +30,7 @@ const Project = () => {
         <ProjectInfo
           showInfo={showInfo}
           setShowInfo={() => setShowInfo(0)}
-          parameters={projectParameters[1]}
+          parameters={projectParameters[showInfo]}
         />
       )}
 
@@ -38,7 +38,7 @@ const Project = () => {
         <ProjectInfo
           showInfo={showInfo}
           setShowInfo={() => setShowInfo(0)}
-          parameters={projectParameters[1]}
+          parameters={projectParameters[showInfo]}
         />
       )}
 

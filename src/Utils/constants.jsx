@@ -12,6 +12,7 @@ import foodifyVideo from "../Assets/Foodify.mp4";
 import customerManagerVideo from "../Assets/CustomerManager.mp4";
 import blackJackVideo from "../Assets/BlackJack.mp4";
 import socialDashboardVideo from "../Assets/SocialDashboard.mp4";
+import uploadedSoon from "../Assets/UploadedSoon.mp4"
 import { FaReact as React } from "react-icons/fa";
 import { TbFileTypeJsx as Jsx } from "react-icons/tb";
 import { SiRedux as Redux } from "react-icons/si";
@@ -237,6 +238,8 @@ const medicozParameters = {
   technologies: medicozTechnologies,
   description: medicozDescription,
   features: medicozFeatures,
+  demo: "N/A",
+  sourceCode: "https://github.com/omkeshri/medicoz_SIH005"
 };
 
 
@@ -309,7 +312,170 @@ const foodifyParameters = {
   technologies: foodifyTechnologies,
   description: foodifyDescription,
   features: foodifyFeatures,
+  demo: "https://food-ordering-website-omkeshri.web.app",
+  sourceCode: "https://github.com/omkeshri/food-ordering-webiste-react"
 };
+
+
+const youtubeDescription =
+  "";
+
+const youtubeFeatures = {
+  title: "Features",
+
+  li1: "",
+  li1About: "",
+  li1Icon: "nothing",
+  
+  li2: "",
+  li2About: "",
+  li2Icon: "nothing",
+  
+  li3: "",
+  li3About: "",
+  li3Icon: "nothing",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+};
+
+const youtubeTechnologies = {
+  title: "Technologies Used",
+
+  li1: "",
+  li1About: "",
+  li1Icon: "nothing",
+  
+  li2: "",
+  li2About: "",
+  li2Icon: "nothing",
+  
+  li3: "",
+  li3About: "",
+  li3Icon: "nothing",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+  
+};
+
+const youtubeParameters = {
+  vid: uploadedSoon,
+  title: "Youtube Clone",
+  subtitle: "Just a Clone",
+  technologies: youtubeTechnologies,
+  description: youtubeDescription,
+  features: youtubeFeatures,
+  demo: "N/A",
+  sourceCode: "N/A"
+};
+
+
+const netflixDescription =
+  "";
+
+const netfilxFeatures = {
+  title: "Features",
+
+  li1: "",
+  li1About: "",
+  li1Icon: "nothing",
+  
+  li2: "",
+  li2About: "",
+  li2Icon: "nothing",
+  
+  li3: "",
+  li3About: "",
+  li3Icon: "nothing",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+};
+
+const netfilxTechnologies = {
+  title: "Technologies Used",
+
+  li1: "",
+  li1About: "",
+  li1Icon: "nothing",
+  
+  li2: "",
+  li2About: "",
+  li2Icon: "nothing",
+  
+  li3: "",
+  li3About: "",
+  li3Icon: "nothing",
+
+  li4: "",
+  li4About: "",
+  li4Icon: "nothing",
+
+  li5: "",
+  li5About: "",
+  li5Icon: "nothing",
+
+  li6: "",
+  li6About: "",
+  li6Icon: "nothing",
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+  
+};
+
+const netfilxParameters = {
+  vid: uploadedSoon,
+  title: "Netflix-GPT",
+  subtitle: "Netflix with GPT Search Recommendation",
+  technologies: netfilxTechnologies,
+  description: netflixDescription,
+  features: netfilxFeatures,
+  demo: "https://netflix-gpt-omkeshari.web.app",
+  sourceCode: "https://github.com/omkeshri/netflix-gpt-react"
+};
+
 
 const socialDashboardDescription =
   "This project is a responsive social media dashboard that allows users to switch between dark and light themes. The dashboard is built using HTML and SCSS, providing a modern and visually appealing interface.";
@@ -381,7 +547,10 @@ const socialDashboardParameters = {
   technologies: socialDashboardTechnologies,
   description: socialDashboardDescription,
   features: socialDashboardFeatures,
+  demo: "N/A",
+  sourceCode: "https://github.com/omkeshri/social-media-dashboard-dark-light-toggle"
 };
+
 
 const customerManagerDescription =
   "This C program is a Customer Management System designed to manage customer orders, calculate bills, apply discounts, and print receipts. The system handles order taking, item cancellation, and payment processing, making it a comprehensive solution for small cafe operations.";
@@ -451,6 +620,8 @@ const customerManagerParameters = {
   technologies: customerManagerTechnologies,
   description: customerManagerDescription,
   features: customerManagerFeatures,
+  demo: "N/A",
+  sourceCode: "https://github.com/omkeshri/customer-management-system-C"
 };
 
 
@@ -531,6 +702,8 @@ const blackJackParameters = {
   technologies: blackJackTechnologies,
   description: blackJackDescription,
   features: blackJackFeatures,
+  demo: "N/A",
+  sourceCode: "https://github.com/omkeshri/black-jack-game"
 };
 
 
@@ -607,13 +780,16 @@ const leadTrackerTechnologies = {
 };
 
 const leadTrackerParameters = {
-  vid: blackJackVideo,
+  vid: uploadedSoon,
   title: "Leads Tracker",
   subtitle: "Chrome Extension for taking notes",
   technologies: leadTrackerTechnologies,
   description: leadTrackerDesciption,
   features: leadTrackerFeatures,
+  demo: "N/A",
+  sourceCode: "https://github.com/omkeshri/leads-tracker-extension"
 };
+
 
 const quizGameDescription =
   "This Python-based quiz game is an interactive and fun way to test your knowledge on various topics. The game uses the random module to present questions in a random order, ensuring a unique experience every time you play. Additionally, the pygame library's mixer module is used to add background music, making the game more engaging.";
@@ -685,23 +861,22 @@ const quizGameTechnologies = {
 };
 
 const quizGameParameters = {
-  vid: blackJackVideo,
+  vid: uploadedSoon,
   title: "Quiz Game",
   subtitle: "A Fun & Interactive Game",
   technologies: quizGameTechnologies,
   description: quizGameDescription,
   features: quizGameFeatures,
+  demo: "N/A",
+  sourceCode: "https://github.com/omkeshri/quiz-game-python"
 };
-
-
-
 
 
 export const projectParameters = {
   1: medicozParameters,
   2: foodifyParameters,
-  3: leadTrackerParameters,
-  4: leadTrackerParameters,
+  3: youtubeParameters,
+  4: netfilxParameters,
   5: socialDashboardParameters,
   6: customerManagerParameters,
   7: blackJackParameters,

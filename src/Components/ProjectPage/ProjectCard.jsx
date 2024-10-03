@@ -11,7 +11,7 @@ const ProjectCard = ({
   return (
     <div
       className="card cursor-pointer overflow-hidden w-[280px] h-[400px] sm:h-[355px] flex flex-col justify-between pb-5"
-      onClick={() => setShowInfo()}
+      
     >
       <img className="w-[95%] h-[160px] rounded-xl " src={imgSrc}></img>
       <h1 className="text-xl font-medium tracking-wide pt-2 text-[#00fbff]">
@@ -23,8 +23,7 @@ const ProjectCard = ({
         Languages Used: {languages}
       </p>
       <p className="mb-3 text-[#a2ff00] font-medium">{languages2}</p></div>
-      <a href={"/"} target="_blank">
-        <button className="project-button">
+        <button className="project-button" onClick={() => setShowInfo()}>
           <div className="svg-wrapper-1">
             <div className="svg-wrapper">
               <svg
@@ -41,9 +40,8 @@ const ProjectCard = ({
               </svg>
             </div>
           </div>
-          <span className="font-medium text-base">Go to Website</span>
+          <span className="font-medium text-base">Explore Details</span>
         </button>
-      </a>
     </div>
   );
 };
