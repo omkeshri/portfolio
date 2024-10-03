@@ -4,8 +4,7 @@ This is my personal portfolio website built using **React**, **Framer Motion**, 
 
 ## Demo
 
-You can view the live demo of the portfolio here:  
-[https://omkeshri-portfolio.web.app](https://omkeshri-portfolio.web.app)
+You can view the live demo of the portfolio here: [https://omkeshri-portfolio.web.app](https://omkeshri-portfolio.web.app)
 
 ## Introduction
 
