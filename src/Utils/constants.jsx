@@ -239,7 +239,7 @@ const medicozParameters = {
   description: medicozDescription,
   features: medicozFeatures,
   demo: "N/A",
-  sourceCode: "https://github.com/omkeshri/medicoz_SIH005"
+  sourceCode: "https://github.com/omkeshri/medicoz"
 };
 
 
