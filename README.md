@@ -2,10 +2,6 @@
 
 This is my personal portfolio website built using **React**, **Framer Motion**, and **Tailwind CSS** to showcase my skills, certificates, and projects. The website is divided into three main sections: **Home**, **Certificates**, and **Projects**.
 
-## Demo
-
-You can view the live demo of the portfolio here: [https://omkeshri-portfolio.web.app](https://omkeshri-portfolio.web.app)
-
 ## Introduction
 
 This portfolio website provides an overview of my professional skills, achievements, and the projects I've worked on. The website is designed to be clean, simple, and user-friendly with smooth animations, thanks to **Framer Motion**, and a modern design style provided by **Tailwind CSS**.
