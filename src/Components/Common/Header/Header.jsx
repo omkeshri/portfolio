@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { headerContainerVariants } from "../../../Utils/motionVariants";
 import HeaderLink from "./HeaderLink";
 import { Link, useLocation } from "react-router-dom";
+import { info } from "../../../Utils/constants";
 
 const Header = () => {
   const location = useLocation();
@@ -34,22 +35,22 @@ const Header = () => {
       </Link>
 
       <div className="flex gap-[0.38rem] sm:gap-3">
-        <Link to={"https://github.com/omkeshri"} target="_blank">
+        <Link to={info.githubLink} target="_blank">
           <HeaderLink Icon={FaGithub} />
         </Link>
-        <Link to={"https://www.linkedin.com/in/omkeshari"} target="_blank">
+        <Link to={info.linkedinLink} target="_blank">
           <HeaderLink Icon={FaLinkedin} />
         </Link>
-        <Link to={"https://leetcode.com/u/omkeshari"} target="_blank">
+        <Link to={info.leetcodeLink} target="_blank">
           <HeaderLink Icon={SiLeetcode} />
         </Link>
-        <Link to={"https://www.codechef.com/users/omkeshari"} target="_blank">
+        <Link to={info.codechefLink} target="_blank">
           <HeaderLink Icon={SiCodechef} />
         </Link>
         {/* <Link to={"https://www.instagram.com/omkeshri_"} target="_blank">
           <HeaderLink Icon={FaInstagram} />
         </Link> */}
-        <Link to={"https://t.me/om_keshari"} target="_blank">
+        <Link to={info.telegramLink} target="_blank">
           <HeaderLink Icon={FaTelegramPlane} />
         </Link>
       </div>

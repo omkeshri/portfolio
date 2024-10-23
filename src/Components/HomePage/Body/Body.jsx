@@ -1,8 +1,8 @@
 import React from "react";
 import InfoContainer from "./InfoContainer";
-import pic from "../../../Images/WhoWeAre.jpg";
 import { motion } from "framer-motion";
 import About from "../About/About";
+import { info } from "../../../Utils/constants";
 
 const Body = () => {
   return (
@@ -13,7 +13,7 @@ const Body = () => {
           whileInView={{x:0, opacity: 1}}
           transition={{duration: 0.6}}
         >
-          <img className="rounded-full w-full h-full" src={pic}></img>
+          <img className="rounded-full w-full h-full" src={info.profileImg}></img>
         </motion.div>
         <motion.div className="">
           <InfoContainer />

@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { popOutVariants } from '../../../Utils/motionVariants'
+import { info } from '../../../Utils/constants'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
     initial="hidden"
     animate="visible"
     >
-      ©️ 2024 Om Keshri
+      ©️ {info.copyrigthDate} {info.name}
     </motion.div>
   )
 }

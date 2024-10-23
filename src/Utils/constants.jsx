@@ -1,3 +1,4 @@
+import profilePic from "../Images/WhoWeAre.jpg";
 import medicozImage from "../Images/Medicoz.png";
 import foodifyImage from "../Images/Foodify.png";
 import youtubeImage from "../Images/Youtube.png";
@@ -12,7 +13,7 @@ import foodifyVideo from "../Assets/Foodify.mp4";
 import customerManagerVideo from "../Assets/CustomerManager.mp4";
 import blackJackVideo from "../Assets/BlackJack.mp4";
 import socialDashboardVideo from "../Assets/SocialDashboard.mp4";
-import uploadedSoon from "../Assets/UploadedSoon.mp4"
+import uploadedSoon from "../Assets/UploadedSoon.mp4";
 import { FaReact as React } from "react-icons/fa";
 import { TbFileTypeJsx as Jsx } from "react-icons/tb";
 import { SiRedux as Redux } from "react-icons/si";
@@ -51,9 +52,24 @@ import { MdHealthAndSafety as Health } from "react-icons/md";
 import { MdOnlinePrediction as Prediction } from "react-icons/md";
 import { FaUserDoctor as Doctor } from "react-icons/fa6";
 import { MdPayment as Transaction } from "react-icons/md";
-import { IoMdContacts as Contact} from "react-icons/io";
-import { SiChatbot as ChatBot} from "react-icons/si";
+import { IoMdContacts as Contact } from "react-icons/io";
+import { SiChatbot as ChatBot } from "react-icons/si";
 
+export const info = {
+  name: "Om Keshri",
+  job: "Web Developer",
+  profileImg: profilePic,
+  languages: ["ReactJs", "NodeJs", "ExpressJs", "NextJs", "MongoDB", "C/C++", "Framer Motion", "Tailwind CSS", "HTML5", "CSS", "JavaScript"],
+  about1: "I am a web developer/engineer with interest in front-end and back-end technologies. I have experience developing websites, Web applications, and Web services using ",
+  about2: ". I enjoy playing around with data and code. Along with being passionate about creating inclusive spaces for everyone, I love learning new things and building cool stuff. Learning is a lifelong process, so I'm always discovering new things. \"Learning is a life-long journey\"",
+  aboutLanguages: ["C++", "ReactJs", "NodeJs", "ExpressJs", "MongoDB"],
+  githubLink: "https://github.com/omkeshri",
+  linkedinLink: "https://www.linkedin.com/in/omkeshari",
+  leetcodeLink: "https://leetcode.com/u/omkeshari",
+  codechefLink: "https://www.codechef.com/users/omkeshari",
+  telegramLink: "https://t.me/om_keshari",
+  copyrigthDate: 2024
+}
 
 export const certificates = [
   { title: "Complete Interview Preparation", name: "gfg" },
@@ -151,8 +167,6 @@ export const projects = [
   },
 ];
 
-
-
 const medicozDescription =
   "Medicoz collects user health data through a web interface, which is processed by machine learning models hosted on a Flask backend. These models analyze the data to predict the severity of different health conditions, with the results displayed on the React frontend, providing users with personalized health insights. Based on these predictions, Medicoz recommends nearby doctors and clinics using the Google Places API. Additionally, the platform features a shopping section for health monitoring devices, with transactions managed through Razorpay. User data and predictions are handled securely throughout the process.";
 
@@ -239,9 +253,8 @@ const medicozParameters = {
   description: medicozDescription,
   features: medicozFeatures,
   demo: "N/A",
-  sourceCode: "https://github.com/omkeshri/medicoz"
+  sourceCode: "https://github.com/omkeshri/medicoz",
 };
-
 
 const foodifyDescription =
   "A React-based food ordering website integrated with the Swiggy API. This application allows users to browse restaurant menus, place orders, and manage their cart. Redux is used for efficient state management, while Tailwind CSS ensures a responsive and modern design.";
@@ -313,12 +326,10 @@ const foodifyParameters = {
   description: foodifyDescription,
   features: foodifyFeatures,
   demo: "https://food-ordering-website-omkeshri.web.app",
-  sourceCode: "https://github.com/omkeshri/food-ordering-webiste-react"
+  sourceCode: "https://github.com/omkeshri/food-ordering-webiste-react",
 };
 
-
-const youtubeDescription =
-  "";
+const youtubeDescription = "";
 
 const youtubeFeatures = {
   title: "Features",
@@ -326,11 +337,11 @@ const youtubeFeatures = {
   li1: "",
   li1About: "",
   li1Icon: "nothing",
-  
+
   li2: "",
   li2About: "",
   li2Icon: "nothing",
-  
+
   li3: "",
   li3About: "",
   li3Icon: "nothing",
@@ -358,11 +369,11 @@ const youtubeTechnologies = {
   li1: "",
   li1About: "",
   li1Icon: "nothing",
-  
+
   li2: "",
   li2About: "",
   li2Icon: "nothing",
-  
+
   li3: "",
   li3About: "",
   li3Icon: "nothing",
@@ -382,7 +393,6 @@ const youtubeTechnologies = {
   li7: "",
   li7About: "",
   li7Icon: "nothing",
-  
 };
 
 const youtubeParameters = {
@@ -393,12 +403,10 @@ const youtubeParameters = {
   description: youtubeDescription,
   features: youtubeFeatures,
   demo: "N/A",
-  sourceCode: "N/A"
+  sourceCode: "N/A",
 };
 
-
-const netflixDescription =
-  "";
+const netflixDescription = "";
 
 const netfilxFeatures = {
   title: "Features",
@@ -406,11 +414,11 @@ const netfilxFeatures = {
   li1: "",
   li1About: "",
   li1Icon: "nothing",
-  
+
   li2: "",
   li2About: "",
   li2Icon: "nothing",
-  
+
   li3: "",
   li3About: "",
   li3Icon: "nothing",
@@ -438,11 +446,11 @@ const netfilxTechnologies = {
   li1: "",
   li1About: "",
   li1Icon: "nothing",
-  
+
   li2: "",
   li2About: "",
   li2Icon: "nothing",
-  
+
   li3: "",
   li3About: "",
   li3Icon: "nothing",
@@ -462,7 +470,6 @@ const netfilxTechnologies = {
   li7: "",
   li7About: "",
   li7Icon: "nothing",
-  
 };
 
 const netfilxParameters = {
@@ -473,9 +480,8 @@ const netfilxParameters = {
   description: netflixDescription,
   features: netfilxFeatures,
   demo: "https://netflix-gpt-omkeshari.web.app",
-  sourceCode: "https://github.com/omkeshri/netflix-gpt-react"
+  sourceCode: "https://github.com/omkeshri/netflix-gpt-react",
 };
-
 
 const socialDashboardDescription =
   "This project is a responsive social media dashboard that allows users to switch between dark and light themes. The dashboard is built using HTML and SCSS, providing a modern and visually appealing interface.";
@@ -548,9 +554,9 @@ const socialDashboardParameters = {
   description: socialDashboardDescription,
   features: socialDashboardFeatures,
   demo: "N/A",
-  sourceCode: "https://github.com/omkeshri/social-media-dashboard-dark-light-toggle"
+  sourceCode:
+    "https://github.com/omkeshri/social-media-dashboard-dark-light-toggle",
 };
-
 
 const customerManagerDescription =
   "This C program is a Customer Management System designed to manage customer orders, calculate bills, apply discounts, and print receipts. The system handles order taking, item cancellation, and payment processing, making it a comprehensive solution for small cafe operations.";
@@ -621,9 +627,8 @@ const customerManagerParameters = {
   description: customerManagerDescription,
   features: customerManagerFeatures,
   demo: "N/A",
-  sourceCode: "https://github.com/omkeshri/customer-management-system-C"
+  sourceCode: "https://github.com/omkeshri/customer-management-system-C",
 };
-
 
 const blackJackDescription =
   "This is a simple implementation of the classic card game BlackJack using HTML, CSS, and JavaScript. The game allows a player to start a game, draw new cards, and aims to get a sum of cards as close to 21 as possible without exceeding it.";
@@ -703,9 +708,8 @@ const blackJackParameters = {
   description: blackJackDescription,
   features: blackJackFeatures,
   demo: "N/A",
-  sourceCode: "https://github.com/omkeshri/black-jack-game"
+  sourceCode: "https://github.com/omkeshri/black-jack-game",
 };
-
 
 const leadTrackerDesciption =
   "This project is a simple lead tracker web application built with HTML, CSS, and JavaScript. The app allows users to save and manage URLs of websites they want to keep track of and also to take quick notes for later use. Users can add URLs manually through an input field or automatically save the current browser tab's URL. The app also provides functionality to clear all saved leads.";
@@ -787,9 +791,8 @@ const leadTrackerParameters = {
   description: leadTrackerDesciption,
   features: leadTrackerFeatures,
   demo: "N/A",
-  sourceCode: "https://github.com/omkeshri/leads-tracker-extension"
+  sourceCode: "https://github.com/omkeshri/leads-tracker-extension",
 };
-
 
 const quizGameDescription =
   "This Python-based quiz game is an interactive and fun way to test your knowledge on various topics. The game uses the random module to present questions in a random order, ensuring a unique experience every time you play. Additionally, the pygame library's mixer module is used to add background music, making the game more engaging.";
@@ -868,9 +871,8 @@ const quizGameParameters = {
   description: quizGameDescription,
   features: quizGameFeatures,
   demo: "N/A",
-  sourceCode: "https://github.com/omkeshri/quiz-game-python"
+  sourceCode: "https://github.com/omkeshri/quiz-game-python",
 };
-
 
 export const projectParameters = {
   1: medicozParameters,
