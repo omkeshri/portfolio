@@ -1,31 +1,49 @@
-import { StrictMode } from "react";
+import { lazy, StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Body from "./Components/HomePage/Body/Body.jsx";
-import Certificates from "./Components/CertificatePage/Certificates.jsx";
-import Project from "./Components/ProjectPage/Project.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import Body from "./Components/HomePage/Body/Body.jsx";
+// import Certificates from "./Components/CertificatePage/Certificates.jsx";
+// import Project from "./Components/ProjectPage/Project.jsx";
+import Shimmer from "./Components/ShimmerPage/Shimmer.jsx";
+
+const Body = lazy(() => import("./Components/HomePage/Body/Body.jsx"));
+const Certificates = lazy(() => import("./Components/CertificatePage/Certificates.jsx"));
+const Project = lazy(() => import("./Components/ProjectPage/Project.jsx"));
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <Suspense fallback={<Shimmer />}>
+        <App />
+      </Suspense>
+    ),
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Body />
+          </Suspense>
+        ),
       },
       {
         path: "/certificates",
-        element: <Certificates />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Certificates />
+          </Suspense>
+        ),
       },
       {
         path: "/projects",
-        element: <Project />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Project />
+          </Suspense>
+        ),
       },
     ],
   },
@@ -34,7 +52,7 @@ const appRouter = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={appRouter}>
-        <App />
+      <App />
     </RouterProvider>
   </StrictMode>
 );

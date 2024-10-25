@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectInfo = ({ showInfo, setShowInfo, parameters }) => {
   const [slide, setSlide] = useState(0);
-console.log(parameters.vid)
+  console.log(parameters.vid);
   return (
     <AnimatePresence mode="wait">
       {showInfo && (
@@ -32,9 +32,14 @@ console.log(parameters.vid)
                   exit={{ x: "-100vw" }}
                 >
                   <ProjectVideo
-                    setSlide={() => setSlide(1)}
                     vidSrc={parameters.vid}
                   />
+                  <div
+                    className="absolute right-5 top-[48%] md:font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] px-4 pt-2 pb-3 pr-3 rounded-full text-white animate-bounce cursor-pointer"
+                    onClick={() => setSlide(1)}
+                  >
+                    ↬
+                  </div>
                 </motion.div>
               )}
 
@@ -156,7 +161,10 @@ console.log(parameters.vid)
                   animate={{ x: 0 }}
                   exit={{ x: "-100vw" }}
                 >
-                  <ProjectLinks demo={parameters.demo} sourceCode={parameters.sourceCode}/>
+                  <ProjectLinks
+                    demo={parameters.demo}
+                    sourceCode={parameters.sourceCode}
+                  />
                   <div className="flex justify-between w-full flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
                     <ProjectButton
                       icon="Previous"
