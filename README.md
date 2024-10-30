@@ -44,7 +44,7 @@ This portfolio website provides an overview of my professional skills, achieveme
 
 ## Usage
 
-Once the development server is running, you can access the website locally at: http://localhost:3000
+Once the development server is running, you can access the website locally at: http://localhost:5173
 
 
 You can navigate between the **Home**, **Certificates**, and **Projects** pages using the navigation bar.
