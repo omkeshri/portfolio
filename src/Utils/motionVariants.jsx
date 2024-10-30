@@ -59,3 +59,27 @@ export const certificateContainerVariants = {
     x: 0
   },
 };
+
+export const nextSlideVariants = {
+  hidden: {
+    x: "100vw",
+  },
+  visible: {
+    x: 0,
+  },
+  leave: {
+    x: "-100vw",
+  }
+};
+
+export const prevSlideVariants = {
+  hidden: {
+    x: "-100vw",
+  },
+  visible: {
+    x: 0,
+  },
+  leave: {
+    x: "100vw",
+  }
+}

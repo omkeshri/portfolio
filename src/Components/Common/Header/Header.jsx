@@ -1,9 +1,8 @@
 import React from "react";
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedin,
-  FaTelegramPlane,
+  FaTelegramPlane
 } from "react-icons/fa";
 import { SiCodechef, SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -47,9 +46,6 @@ const Header = () => {
         <Link to={info.codechefLink} target="_blank">
           <HeaderLink Icon={SiCodechef} />
         </Link>
-        {/* <Link to={"https://www.instagram.com/omkeshri_"} target="_blank">
-          <HeaderLink Icon={FaInstagram} />
-        </Link> */}
         <Link to={info.telegramLink} target="_blank">
           <HeaderLink Icon={FaTelegramPlane} />
         </Link>

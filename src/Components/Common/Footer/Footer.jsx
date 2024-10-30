@@ -10,7 +10,8 @@ const Footer = () => {
     initial="hidden"
     animate="visible"
     >
-      ©️ {info.copyrigthDate} {info.name}
+      <div>
+      ©️ {info.copyrigthDate} {info.name}</div>
     </motion.div>
   )
 }

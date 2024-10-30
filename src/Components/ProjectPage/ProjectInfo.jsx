@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectInfo = ({ showInfo, setShowInfo, parameters }) => {
   const [slide, setSlide] = useState(0);
-  console.log(parameters.vid);
+  
   return (
     <AnimatePresence mode="wait">
       {showInfo && (
@@ -35,7 +35,7 @@ const ProjectInfo = ({ showInfo, setShowInfo, parameters }) => {
                     vidSrc={parameters.vid}
                   />
                   <div
-                    className="absolute right-5 top-[48%] md:font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] px-4 pt-2 pb-3 pr-3 rounded-full text-white animate-bounce cursor-pointer"
+                    className="absolute right-5 top-[48%] md:font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] px-4 pt-2 pb-3 pr-3 rounded-full text-white cursor-pointer"
                     onClick={() => setSlide(1)}
                   >
                     ↬
