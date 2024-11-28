@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Shimmer = () => {
   return (
     <div className="flex justify-center items-center h-screen">
-      <button
+      {/* <button
         type="button"
         className="text-white text-2xl font-semibold py-2 px-4 rounded-lg flex items-center disabled:opacity-50"
         disabled
@@ -21,9 +21,14 @@ const Shimmer = () => {
           <path d="M14 2a10 10 0 0 1 0 20" />
         </svg>
         Loading...
-      </button>
+      </button> */}
+      <div class="loader">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Shimmer
+export default Shimmer;

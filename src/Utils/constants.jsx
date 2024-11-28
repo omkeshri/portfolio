@@ -59,6 +59,14 @@ import { FaUserDoctor as Doctor } from "react-icons/fa6";
 import { MdPayment as Transaction } from "react-icons/md";
 import { IoMdContacts as Contact } from "react-icons/io";
 import { SiChatbot as ChatBot } from "react-icons/si";
+import { BiLogoPhp as Php } from "react-icons/bi";
+import { SiMysql as  MySql } from "react-icons/si";
+import { FaBootstrap as BootStrap } from "react-icons/fa";
+import { CgWebsite as Interface } from "react-icons/cg";
+import { SiTypeorm as Categories } from "react-icons/si";
+import { GrUserAdmin as Admin } from "react-icons/gr";
+
+
 
 
 // provide personal information
@@ -134,7 +142,16 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 4,
+    title: "Food Ordering PHP",
+    subtitle: "Order, Admin, Responsive",
+    languages: "HTML, CSS",
+    languages2: "JavaScript, PHP",
+    imgSrc: netflixImage,
+  },
+
+  {
+    id: 6,
     title: "Social Media Dashboard",
     subtitle: "Dark/Light Toggle",
     languages: "HTML, SCSS,",
@@ -143,7 +160,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Customer Manager",
     subtitle: "Manage Billing",
     languages: "C/C++",
@@ -152,7 +169,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Black Jack",
     subtitle: "Fun & Interactive Game",
     languages: "HTML, CSS",
@@ -161,7 +178,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Leads Tracker",
     subtitle: "Chrome Extension",
     languages: "HTML, CSS,",
@@ -170,7 +187,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Quiz Game",
     subtitle: "Fun & Interactive Game",
     languages: "Python",
@@ -515,11 +532,86 @@ const netfilxParameters = {
   sourceCode: "https://github.com/omkeshri/netflix-gpt-react",
 };
 
+
 // provide project5 description
+const foodWebsitePhpDescription  = "The Food Ordering Website is a PHP-based platform that offers a seamless experience for users to browse menus, place orders, and manage their carts, all while ensuring responsive design for both desktop and mobile devices. The site includes an admin panel that allows easy management of menu items, order tracking, and category organization. With its simple, intuitive interface, the platform streamlines the food ordering process for customers and administrators alike, providing a user-friendly and efficient way to handle online orders.";
+
+// provide project5 technologies used
+const foodWebsitePhpTechnologies = {
+  title: "Technologies Used",
+  li1: "HTML:",
+  li1About: "For structuring the web pages and content.",
+  li1Icon: Html,
+  li2: "CSS:",
+  li2About: "For designing and styling the user interface.",
+  li2Icon: Css,
+  li3: "JavaScript:",
+  li3About: "For enhancing interactivity and dynamic behavior.",
+  li3Icon: Js,
+  li4: "PHP:",
+  li4About: "For server-side scripting and backend functionality.",
+  li4Icon: Php,
+  li5: "MySQL:",
+  li5About: "For database management and data storage.",
+  li5Icon: MySql,
+  li6: "Bootstrap:",
+  li6About: "For responsive design and pre-built UI components.",
+  li6Icon: BootStrap,
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+};
+
+// provide project5 features
+const foodWebsitePhpFeatures = {
+  title: "Features",
+  li1: "User-Friendly Interface:",
+  li1About: "Intuitive design allowing users to easily browse and order food.",
+  li1Icon: Interface,
+
+  li2: "Menu Categorization:",
+  li2About: "Organized food items into categories for better navigation.",
+  li2Icon: Categories,
+
+  li3: "Order Management:",
+  li3About: "Allows users to view and track their orders seamlessly.",
+  li3Icon: Cart,
+
+  li4: "Admin Panel:",
+  li4About: "Comprehensive dashboard for managing menus, categories, and orders.",
+  li4Icon: Admin,
+
+  li5: "Responsive Design:",
+  li5About: "Optimized for desktop and mobile devices for a great user experience.",
+  li5Icon: Responsive,
+
+  li6: "Search Functionality:",
+  li6About: "Quickly search for specific dishes or menu items.",
+  li6Icon: Search,
+
+  li7: "",
+  li7About: "",
+  li7Icon: "nothing",
+};
+
+const foodWebsitePhpParameters = {
+  vid: socialDashboardVideo,
+  title: "Food Ordering Website PHP",
+  subtitle: "Ordering, Admin, Responsive.",
+  technologies: foodWebsitePhpTechnologies,
+  description: foodWebsitePhpDescription,
+  features: foodWebsitePhpFeatures,
+  demo: "N/A",
+  sourceCode:
+    "https://github.com/omkeshri/food-ordering-website-php",
+}
+
+
+// provide project6 description
 const socialDashboardDescription =
   "This project is a responsive social media dashboard that allows users to switch between dark and light themes. The dashboard is built using HTML and SCSS, providing a modern and visually appealing interface.";
 
-// provide project5 technologies used
+// provide project6 technologies used
 const socialDashboardTechnologies = {
   title: "Technologies Used",
   li1: "HTML:",
@@ -547,7 +639,7 @@ const socialDashboardTechnologies = {
   li7Icon: "nothing",
 };
 
-// provide project5 features
+// provide project6 features
 const socialDashboardFeatures = {
   title: "Features",
   li1: "Dark/Light Theme Toggle:",
@@ -581,7 +673,7 @@ const socialDashboardFeatures = {
   li7Icon: "nothing",
 };
 
-// add project5 parameters
+// add project6 parameters
 const socialDashboardParameters = {
   vid: socialDashboardVideo,
   title: "Social Media Dashboard",
@@ -595,11 +687,11 @@ const socialDashboardParameters = {
 };
 
 
-// provide project6 description
+// provide project7 description
 const customerManagerDescription =
   "This C program is a Customer Management System designed to manage customer orders, calculate bills, apply discounts, and print receipts. The system handles order taking, item cancellation, and payment processing, making it a comprehensive solution for small cafe operations.";
 
-// provide project6 tecnnologies used
+// provide project7 tecnnologies used
 const customerManagerTechnologies = {
   title: "Files Used",
   li1: "Menu.txt:",
@@ -625,7 +717,7 @@ const customerManagerTechnologies = {
   li7Icon: "nothing",
 };
 
-// provide project6 features
+// provide project7 features
 const customerManagerFeatures = {
   title: "Features",
   li1: "Menu Display:",
@@ -659,7 +751,7 @@ const customerManagerFeatures = {
   li7Icon: "nothing",
 };
 
-// add project6 parameters
+// add project7 parameters
 const customerManagerParameters = {
   vid: customerManagerVideo,
   title: "Customer Management System",
@@ -672,11 +764,11 @@ const customerManagerParameters = {
 };
 
 
-// provide project7 description
+// provide project8 description
 const blackJackDescription =
   "This is a simple implementation of the classic card game BlackJack using HTML, CSS, and JavaScript. The game allows a player to start a game, draw new cards, and aims to get a sum of cards as close to 21 as possible without exceeding it.";
 
-// provide project7 technologies used
+// provide project8 technologies used
 const blackJackTechnologies = {
   title: "Technologies Used",
 
@@ -709,7 +801,7 @@ const blackJackTechnologies = {
   li7About: "",
   li7Icon: "nothing",
 };
-// provide project7 features
+// provide project8 features
 const blackJackFeatures = {
   title: "Features",
 
@@ -742,9 +834,9 @@ const blackJackFeatures = {
   li7: "",
   li7About: "",
   li7Icon: "nothing",
-};
+}
 
-// provide project7 parameters
+// provide project8 parameters
 const blackJackParameters = {
   vid: blackJackVideo,
   title: "Black Jack",
@@ -754,14 +846,14 @@ const blackJackParameters = {
   features: blackJackFeatures,
   demo: "N/A",
   sourceCode: "https://github.com/omkeshri/black-jack-game",
-};
+}
 
 
-// provide project8 description
+// provide project9 description
 const leadTrackerDesciption =
   "This project is a simple lead tracker web application built with HTML, CSS, and JavaScript. The app allows users to save and manage URLs of websites they want to keep track of and also to take quick notes for later use. Users can add URLs manually through an input field or automatically save the current browser tab's URL. The app also provides functionality to clear all saved leads.";
 
-// provide project8 technologies used
+// provide project9 technologies used
 const leadTrackerTechnologies = {
   title: "Technologies Used",
   li1: "HTML:",
@@ -795,7 +887,7 @@ const leadTrackerTechnologies = {
   li7Icon: "nothing",
 };
 
-// provide project8 features
+// provide project9 features
 const leadTrackerFeatures = {
   title: "Features",
 
@@ -832,7 +924,7 @@ const leadTrackerFeatures = {
   li7Icon: "nothing",
 };
 
-// add project8 parameters
+// add project9 parameters
 const leadTrackerParameters = {
   vid: uploadedSoon,
   title: "Leads Tracker",
@@ -845,11 +937,11 @@ const leadTrackerParameters = {
 };
 
 
-// provide project9 description
+// provide project10 description
 const quizGameDescription =
   "This Python-based quiz game is an interactive and fun way to test your knowledge on various topics. The game uses the random module to present questions in a random order, ensuring a unique experience every time you play. Additionally, the pygame library's mixer module is used to add background music, making the game more engaging.";
 
-// provide project9 technologies used
+// provide project10 technologies used
 const quizGameTechnologies = {
   title: "Technologies Used",
 
@@ -882,7 +974,7 @@ const quizGameTechnologies = {
   li7Icon: "nothing",
 };
 
-// provide project9 features
+// provide project10 features
 const quizGameFeatures = {
   title: "Features",
 
@@ -917,7 +1009,7 @@ const quizGameFeatures = {
   li7Icon: "nothing",
 };
 
-// provide project9 parameters
+// provide project10 parameters
 const quizGameParameters = {
   vid: uploadedSoon,
   title: "Quiz Game",
@@ -936,11 +1028,12 @@ export const projectParameters = {
   2: foodifyParameters,
   3: youtubeParameters,
   4: netfilxParameters,
-  5: socialDashboardParameters,
-  6: customerManagerParameters,
-  7: blackJackParameters,
-  8: leadTrackerParameters,
-  9: quizGameParameters,
+  5: foodWebsitePhpParameters,
+  6: socialDashboardParameters,
+  7: customerManagerParameters,
+  8: blackJackParameters,
+  9: leadTrackerParameters,
+  10: quizGameParameters,
 };
 
 
