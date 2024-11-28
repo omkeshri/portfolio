@@ -10,7 +10,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="card bg-[#09357c] cursor-pointer overflow-hidden w-[280px] h-[400px] sm:h-[355px] flex flex-col justify-between pb-5"
+      className="card bg-[#3d629e] cursor-pointer overflow-hidden w-[280px] h-[400px] sm:h-[355px] flex flex-col justify-between pb-5"
       
     >
       <img className="w-[95%] h-[160px] rounded-xl " src={imgSrc}></img>

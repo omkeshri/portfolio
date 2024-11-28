@@ -5,7 +5,8 @@ import { Outlet, ScrollRestoration } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="relative bg-body overflow-hidden">
+    // bg-white
+    <div className="relative bg-body overflow-hidden"> 
       <Header />
       <ScrollRestoration />
       <Outlet />

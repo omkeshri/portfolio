@@ -91,7 +91,7 @@ export const info = {
 // provide the certificates you have done
 export const certificates = [
   { title: "Complete Interview Preparation", name: "gfg" },
-
+  { title: "NPTEL Cloud Computing", name: "nptelCloud"},
   { title: "Algorithmic Toolbox", name: "dsa" },
   { title: "Dynamic Programming, Greedy Algorithms", name: "dp" },
   { title: "HTML, CSS and JavaScript for Beginners", name: "frontend" },

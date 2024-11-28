@@ -10,8 +10,7 @@ const Button = ({name, delay}) => {
     whileInView="visible"
     transition={{delay: delay}}
     >
-
-      <button id="btn" className="text-[#ffffff58] border border-[#3b82f6]">{name}</button>
+      <button id="btn" className="text-black border border-[#3b4bf6]">{name}</button>
     </motion.div>
   );
 };

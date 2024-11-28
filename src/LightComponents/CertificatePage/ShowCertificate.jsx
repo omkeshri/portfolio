@@ -8,7 +8,6 @@ import genai from "../../Images/genai.png";
 import llm from "../../Images/llm.png";
 import genaillm from "../../Images/genaillm.png";
 import network from "../../Images/network.png";
-import nptelCloud from "../../Images/nptelCloud.png"
 import { motion } from "framer-motion";
 
 const ShowCertificate = ({ name, showItems, setShowIndex, imgSrc }) => {
@@ -18,7 +17,6 @@ const ShowCertificate = ({ name, showItems, setShowIndex, imgSrc }) => {
 
   const images = {
     gfg,
-    nptelCloud,
     dsa,
     dp,
     frontend,
@@ -33,7 +31,7 @@ const ShowCertificate = ({ name, showItems, setShowIndex, imgSrc }) => {
     <div className="w-full flex items-center flex-col"
     >
       <div
-        className="w-full flex justify-between cursor-pointer bg-[#334155] text-white py-[0.65rem] px-4 rounded-lg font-medium"
+        className="w-full flex justify-between cursor-pointer bg-gray-300 text-black py-[0.65rem] px-4 rounded-lg font-medium"
         onClick={handleShowCertificate}
       >
         <p>{name}</p>
