@@ -12,6 +12,7 @@ This portfolio website provides an overview of my professional skills, achieveme
 - **Dynamic Routing**: Each section of the portfolio is navigable through specific routes.
 - **Certificates Display**: A dedicated page to showcase all the certificates I've earned.
 - **Projects Showcase**: A project page highlighting all the projects I've built.
+- **Dark/Light Toggle**: User-friendly theme switcher to toggle between dark mode and light mode.
 - **Modern Styling**: The website's look and feel are enhanced by the utility-first approach of Tailwind CSS.
 
 ## Technologies Used
