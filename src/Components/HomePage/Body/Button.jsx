@@ -11,7 +11,7 @@ const Button = ({name, delay}) => {
     transition={{delay: delay}}
     >
 
-      <button id="btn" className="text-[#ffffff58] border border-[#3b82f6]">{name}</button>
+      <button id="btn" className="text-[#ffffff58] border border-[#3b82f6] py-[3px] px-[15px] font-[400]">{name}</button>
     </motion.div>
   );
 };

@@ -31,7 +31,7 @@ const ShowCertificate = ({ name, showItems, setShowIndex, imgSrc }) => {
     <div className="w-full flex items-center flex-col"
     >
       <div
-        className="w-full flex justify-between cursor-pointer bg-gray-300 text-black py-[0.65rem] px-4 rounded-lg font-medium"
+        className="w-full flex justify-between cursor-pointer bg-[#f9fafb] shadow-md text-black py-[0.65rem] px-4 rounded-lg font-medium"
         onClick={handleShowCertificate}
       >
         <p>{name}</p>

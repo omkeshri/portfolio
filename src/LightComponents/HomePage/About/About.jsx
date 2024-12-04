@@ -8,7 +8,7 @@ import { info } from "../../../Utils/constants";
 
 const About = () => {
   return (
-    <div className="h-screen flex flex-col gap-4 items-center justify-center text-slate-500">
+    <div className="h-screen flex flex-col font-medium gap-4 items-center justify-center text-slate-500">
       <motion.h3
         className="text-xl sm:text-4xl text-slate-50 font-bold"
         variants={popOutVariants}

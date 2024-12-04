@@ -6,7 +6,7 @@ const HeaderLink = ({ Icon }) => {
   return (
     <div>
       <motion.div
-        className="bg-gray-500 p-3 rounded-full cursor-pointer text-white"
+        className="bg-gray-800 p-3 rounded-full cursor-pointer text-white"
         variants={headerLinkVariants}
         whileHover="hover"
       >

@@ -23,7 +23,7 @@ const ProjectCard = ({
         Languages Used: {languages}
       </p>
       <p className="mb-3 text-[#a2ff00] font-medium">{languages2}</p></div>
-        <button className="project-button" onClick={() => setShowInfo()}>
+        <button className="project-button bg-[#DAD9D9]" onClick={() => setShowInfo()}>
           <div className="svg-wrapper-1">
             <div className="svg-wrapper">
               <svg

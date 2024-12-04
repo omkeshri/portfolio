@@ -9,7 +9,7 @@ const Certificates = () => {
 
   return (
     <div
-      className={`flex flex-col gap-6 items-center justify-center mt-24  ${
+      className={`flex flex-col gap-6 items-center justify-center mt-32  ${
         showIndex === null ? "h-full pb-20 lg:h-screen" : "h-full"
       }`}
     >
