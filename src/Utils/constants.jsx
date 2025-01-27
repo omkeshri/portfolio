@@ -1,6 +1,6 @@
 // edit the images in src/Images
 // import profilePic from "../Images/WhoWeAre.jpg";
-import profilePic from "../Images/ProfilePic.jpg";
+import profilePic from "../Images/ProfilePic.png";
 import medicozImage from "../Images/Medicoz.png";
 import foodifyImage from "../Images/Foodify.png";
 import youtubeImage from "../Images/Youtube.png";
